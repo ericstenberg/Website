@@ -1,0 +1,30 @@
+$text-align: center;
+
+h1 {
+ border-top: none;
+ border-left: none;
+ border-right:none;
+ border-bottom: 5px solid black;
+ font-size: 26px;
+}
+
+footer {
+ text-align: $text-align;
+}
+
+h6 {
+ color: grey;
+}
+
+body {
+ padding: 10%;
+}
+
+div.PageHeaderSearch {
+ float:right;
+ font-size:13px;
+}
+
+div.BottomLinks {
+ text-align: $text-align;
+}
