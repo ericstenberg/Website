@@ -1,4 +1,9 @@
 $text-align: center;
+$edgeposition: 10%;
+
+html,body{
+ height: 100%;
+}
 
 h1 {
  border-top: none;
@@ -10,6 +15,9 @@ h1 {
 
 footer {
  text-align: $text-align;
+ bottom: $edgeposition;
+ position: fixed;
+ width: 80%
 }
 
 h6 {
@@ -17,14 +25,34 @@ h6 {
 }
 
 body {
- padding: 10%;
+ padding: $edgeposition;
 }
 
-div.PageHeaderSearch {
+.PageHeaderSearch {
  float:right;
  font-size:13px;
 }
 
-div.BottomLinks {
+.BottomLinks {
  text-align: $text-align;
+}
+
+.container {
+ .column-left {
+  float:left;
+  width: 20%;
+ }
+
+ .column-right {
+  float: right;
+  width: 20%;
+}
+
+ .column-center {
+  display: inline-block;
+  width: 60%;
+  column-height: 100%;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+ }
 }
