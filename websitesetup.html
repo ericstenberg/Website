@@ -22,34 +22,74 @@
      <h2>Setting Up This Website</h2>
      <p>HTML and CSS form the backbone of this website. JavaScript and Python will be added at a later date to increase the interactivity of the site. For a fuller understanding of the interaction of the elements underlying the site, right-click on any of these pages and click "View Page Source" or similar in whatever browser you use.</p>
      <p>The basic elements are below:</p>
-     <h3>HTML</h3>
+     <h3>HTML (Hypertext Markup Language)</h3>
+     <p></p>
      <p><b><span><</span>!DOCTYPE html<span>></span></b></p>
+     <p>This element instructs the browser on the version of HTML to use. This webpage is written in HTML5, as designated by "!DOCTYPE html."<sup>1</sup></p>
      <p><b><span><</span>html<span>></span>...<span><</span>/html<span>></span></b></p>
-     <p><span><</span>head<span>></span>...<span><</span>/head<span>></span></p>
-     <p><span><</span>title<span>></span></p>
-     <p><span><</span>meta charset="UTF-8"<span>></span></p>
-     <p><span><</span>meta name="viewport" content="width=device-width,initial-scale=1.0"<span>></span></p>
-     <p><span><</span>link rel="stylesheet" href="styles.css"<span>></span></p>
-     <p><span><</span>body<span>></span></p>
-     <p><span><</span>heade<span>r></span></p>
-     <p><span><</span>main<span>></span></p>
-     <p><span><</span>footer<span>></span></p>
-     <p><span><</span>div id="Container"<span>></span></p>
-     <p><span><</span>div id="ColumnCenterHome"<span>></span></p>
-     <p><span><</span>div id="ColumnCenterOther"<span>></span></p>
-     <p><span><</span>div id="ColumnLeft"<span>></span></p>
-     <p><span><</span>div id="ColumnRight"<span>></span></p>
-     <p><span><</span>a href=""<span>></span></a></p>
-     <p><span><</span>h1<span>><</span>h2<span>><</span>h3<span>><</span>h4<span>><</span>h6<span>></span></p>
-     <p><span><</span>ul<span>></span><span><</span>/ul<span>></span></p>
-     <!--<li></p>-->
+     <p>This element contains all of the other elements that make up the webpage and designates the document as a webpage.<sup>2</sup></p>
+     <p><b><span><</span>head<span>></span>...<span><</span>/head<span>></span></b></p>
+     <p>The first of the two main elements on a webpage, the head contains all of the title, style, and meta elements that set the flavor of the webpage. This element is not directly visible to the user, but does have a direct influence on how the user experiences the site.</p>
+     <p><b><span><</span>title<span>></span>...<span><</span>/title<span>></span></b></p>
+     <p>The title is the name of the webpage that appears in the top bar and tabs of a browser. This is a good indicator to let the user know exactly what part of the site they are visiting.</p>
+     <p><b><span><</span>meta charset="UTF-8"<span>></span>...<span><</span>/meta<span>></span></b></p>
+     <p>The meta element assigns metadata to the webpage and can be used to give the webpage specific characteristics. For instance, this webpage has been given a charset of "UTF-8," which instructs the browser to expand the characters that will show up beyond the standard ANSI character set.<sup>3</sup></p>
+     <p><b><span><</span>meta name="viewport" content="width=device-width,initial-scale=1.0"<span>></span>...<span><</span>/meta<span>></span></b></p>
+     <p>Another meta setting, this one sets the width of the page to the width of the browser screen. This makes it viable for use on desktops, laptops, phones, and other devices.</p>
+     <p><b><span><</span>link rel="stylesheet" href="styles.css"<span>></span></b></p>
+     <p>One of the most important elements, the link element in this context is used to import the CSS (Cascading Style Sheets) file into the HTML file. Though styling could be called out on each page, this would be inefficient and would represent a problem every time a style change needed to be made across multiple pages. For larger websites with potentially hundreds of pages, this goes from cumbersome to impossible.</p>
+     <p><b><span><</span>body<span>></span>...<span><</span>/body<span>></span></b></p>
+     <p>The second of the two main elements on a webpage, the body contains all of the information that is directly accessible by the user. This can be as simple as characters on the page up to different spacings, columns, headings, links, and so forth.</p>
+     <p>This webpage is split into 3 sections: header, main, and footer. Note that head, header, and heading are different elements. The head has already been covered and the header and headings will be covered later. Main and footer will also be covered further down.</p>
+     <p><b><span><</span><span>header</span><span>></span>...<span><</span>/header<span>></span></b></p>
+     <p>Like a standard document, this website is split into 3 constitutant parts: header, main, footer. The header contains elements at the top of the page that do not change. At the moment, this only includes the visible title. However, a search bar will be added at a later date.</p>
+     <p><b><span><</span>main<span>></span>...<span><</span>/main<span>></span></b></p>
+     <p>The main part of the body is where the meat of the website is contained. This is where the main posts, previews, and summaries of the pages are located.</p>
+     <p><b><span><</span>footer<span>></span>...<span><</span>/footer<span>></span></b></p>
+     <p>Much like the header, the footer does not or rarely ever changes. This contains the links around the basics of the website (home, about me, contacts, disclaimer, etc.). If you are ever lost, just click the link home.</p>
+     <p><b><span><</span>div id="..."<span>></span><span>...<</span>/div<span>></span></b></p>
+     <p>The "div" element is a catch-all element that allows the user to create various styles depending on the website needs. For this website's purposes, the div id="Container" is not immediately visible, but its subelements div id="ColumnCenterHome", div id="ColumnCenterOther", div id="ColumnLeft", and div id="ColumnRight" separate different information into sections. This allows the site to have easy access to other parts of the site and makes reading the core information easier.</p>
+     <p><b><span><</span>a href=""<span>></span><span>...<</span>/a<span>></span></a></b></p>
+     <p>This is the basic hyperlink element. A core component of almost all websites, this allows the user to navigate different pages and download items.<p>
+     <p><b><span><</span>h1<span>>, <</span>h2<span>>, <</span>hn<span>>,...<</span>/hn<span>>, <</span>/h2<span>>, <</span>/h1<span>></span></b></p>
+     <p>Another basic element of almost all websites, headers allow the user to differentiate between titles, subtitles, etc. From 1 to 6, they decrease in size and can be modified like other elements in stylesheets, which are covered below.</p>
+     <p><b><span><</span>ul<span>></span>...<span><</span>/ul<span>></span></b></p>
+     <p>This element is the unordered list element, which can be found in the Tags below. This can be used to create a list where the order of elements is not important. See <span><</span>li<span>></span>...<span><</span>/li<span>></span> below for information on adding individual elements to the unordered list.</p>
+     <p><b><span><</span>ol<span>></span>...<span><</span>/ol<span>></span></b></p>
+     <p>This element is the ordered list element, which can be found in the References below. Unlikely the unordered list, this can be used to create a list where the order of elements is important. See <span><</span>li<span>></span>...<span><</span>/li<span>></span> below for information on adding individual elements to the ordered list.</p>
+     <p><b><span><</span>li<span>></span>...<span><</span>/li<span>></span></b></p>
+     <p>In order to create a list, elements must be added to the ordered or unordered block and this element does that. Each <span><</span>li<span>></span>...<span><</span>/li<span>></span> pair corresponds to one item on the list.</p>
+     <p></p>
+     <h3>CSS (Cascading Style Sheets)</h3>
+     <p><b>SASS</b></p>
+     <p>Styling with CSS is a good method for separating the out the stylistic elements of a website from the information and all-around good way of organizing a website. One of the weaknesses of CSS is the inability to set a variable once and then use that variable across a number of different elements. Enter SASS. SASS allows for the user to create CSS files with variables and flow control. 
+     <p>$variable</p>
+     <p>padding</p>
+     <p>height</p>
+     <p>width</p>
+     <p>position</p>
+     <p>bottom</p>
+     <p>text-align</p>
+     <p>border</p>
+     <p>margin</p>
+     <p>font-size</p>
+     <p>color</p>
+     <p>text-decoration</p>
+     <p>display</p>
+     <p>
      <h3>Tags</h3>
      <ul>
       <li>HTML</li>
       <li>CSS</li>
      </ul>
      <h3>References</h3>
-     <ul>
+     <ol>
+      <li><a href="https://www.w3schools.com/tags/tag_doctype.asp">W3 Schools - HTML Doctype Declaration</a></li>
+      <li><a href="https://www.w3schools.com/tags/tag_html.asp">W3 Schools -HTML HTML Tag</a></li>
+      <li><a href="https://www.w3schools.com/tags/tag_meta.asp">W3 Schools - HTML Meta Tag</a></li>
+      <li><a href="https://www.w3schools.com/tags/tag_sup.asp">W3 Schools - HTML Sup Tag</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">Wikipedia - Cascading Style Sheets</a></li>
+      <li><a href="https://sass-lang.com/">SASS: Syntactically Awesome Style Sheets</a></li>
       <li><a href="https://www.w3schools.com/html/default.asp">W3 Schools - HTML Tutorial</a></li>
       <li><a href="https://www.w3schools.com/tags/tag_iframe.asp">W3 Schools - iframes</a></li>
       <li><a href="https://www.w3schools.com/cssref/pr_font_font-style.asp">W3 Schools - font-style</a></li>
@@ -57,7 +97,7 @@
       <li><a href="https://www.w3schools.com/tags/tag_span.asp">W3 Schools - HTML Span Tag</a></li>
       <li><a href="https://stackoverflow.com/questions/2789703/remove-stubborn-underline-from-link#2789864">Stack Overflow - Removing Stubborn Underline From Link</a></li>
       <li><a href="https://stackoverflow.com/questions/15175312/increase-font-size-of-hyperlink-text-html#15175330">Stack Overflow - Increase Font Size Of Hyperlink Text Html</a></li>
-     </ul>
+     </ol>
     </div>
     <div id="ColumnLeft">
      <h4>October 2018</h4>
