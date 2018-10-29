@@ -53,6 +53,9 @@ iframe {
 .BottomLinks {
   text-align: center; }
 
+#TextIndent {
+  text-indent: 10px; }
+
 #Container #ColumnLeft {
   float: left;
   width: 20%;
