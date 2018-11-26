@@ -2,6 +2,10 @@
 <html>
  <head>
   <title>Website Setup | Encoding/Decoding</title>
+  <meta name="description" content="Website Setup describes how to set up a basic website using HTML and CSS.">
+  <meta name="keywords" content="HTML,CSS">
+  <meta name="robots" content="noodp,noydir">
+  <meta name="author" content="Eric Stenberg">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
@@ -25,9 +29,9 @@
      <p>The first of the two main elements on a webpage, the head contains all of the title, style, meta, and other elements that set the flavor of the webpage.<sup>3</sup> This element is not directly visible to the user, but does have a direct influence on how the user experiences the site.</p>
      <p><b><span><</span>title<span>></span>...<span><</span>/title<span>></span></b></p>
      <p>The title is the name of the webpage that appears in the top bar and tabs of a browser.<sup>4</sup> This is the indicator to let the user know exactly what part of the site they are visiting.</p>
-     <p><b><span><</span>meta charset="UTF-8"<span>></span>...<span><</span>/meta<span>></span></b></p>
+     <p><b><span><</span>meta charset="UTF-8"<span>></span></b></p>
      <p>The meta element assigns metadata to the webpage and can be used to give the webpage specific characteristics. For instance, this webpage has been given a charset of "UTF-8," which instructs the browser to expand the characters that will show up beyond the standard ANSI character set.<sup>5</sup></p>
-     <p><b><span><</span>meta name="viewport" content="width=device-width,initial-scale=1.0"<span>></span>...<span><</span>/meta<span>></span></b></p>
+     <p><b><span><</span>meta name="viewport" content="width=device-width,initial-scale=1.0"<span>></span></b></p>
      <p>Another meta setting, this one sets the width of the page to the width of the browser screen.<sup>5</sup> This makes it viable for use on desktops, laptops, phones, and other devices.</p>
      <p><b><span><</span>link rel="stylesheet" href="styles.css"<span>></span></b></p>
      <p>One of the most important elements, the link element in this context is used to import the CSS (Cascading Style Sheets) file into the HTML file.<sup>6</sup> Though styling could be called out on each page, this would be inefficient and would represent a problem every time a style change needed to be made across multiple pages. For larger websites with potentially hundreds of pages, this goes from cumbersome to impossible.</p>
@@ -99,6 +103,16 @@
      <h3>Conclusions</h3>
      <p>As stated at the beginning of this section, this site was created using only HTML and CSS. This does not even begin to scratch the surface of modern web development. Many websites incorporate elements from languages such as JavaScript and Python, frameworks such as Django and Flask, and database management such as MongoDB, SQLite, and MySQL. Further, other methods of styling like Bootstrap can help remove some of the complication behind stylizing a website.</p>
      <p>Further complexity and tutorials on incorporating those elements are still to come.</p>
+     <h3>Addendum 1</h3>
+     <p>One of the initial problems that surfaced when developing this site was making it visible across various search engines with the appropriate description for the site. Several solutions were found for this problem and are expanded upon below:</p>
+     <p><b><span><</span>meta name="description" content="insert content here"<span>></span></b></p>
+     <p>Adding the above line tells search engines to use the content in the content variable as opposed to any other available source.<sup>40</sup></p>
+     <p><b><span><</span>meta name="robots" content="noodp,noydir"<span>></span></b></p>
+     <p>Adding this line instructs the search engines to not use the Open Directory Project or Yahoo Directory for the title or description, re-enforcing that only what is given on this website should be used.<sup>40</sup><p>
+     <p><b><span><</span>meta name="keywords" content="keyword1,keyword2,...,keywordn"<span>></span></b></p>
+     <p>The first round of this site did not have any keywords associated with it, which has been rectified with this addendum. The main reason for using these is to associate a file or website with particular words and thus bump them up in the search results.<sup>5</sup></p>
+     <p><b><span><</span>meta name="author" content="Firstname Lastname"<span>></span></b></p>
+     <p>Upon further review, it was discovered that my name was not added to the website. From a marketing and brand perspective, this is not great due to the disassociation between the two. As such, the line above connects the two.<sup>5</sup>     
      <h3>Tags</h3>
      <ul>
       <li>HTML</li>
@@ -184,6 +198,8 @@
       <li><a href="https://www.w3schools.com/CSSref/pr_class_display.asp">W3 Schools - CSS Display Property</a></li>
 <!--39-->
       <li><a href="https://www.w3schools.com/csSref/pr_text_text-indent.asp">W3 Schools - CSS Text-Indent Property</a></li>
+<!--40-->
+      <li><a href="https://www.firstscribe.com/google-change-title-description-search-results/">First Scribe Blog - Why Doesn't Google Use My Title Tag and Meta Description In Search Results?</a></li>
      </ol>
     </div>
     <div id="ColumnLeft">
@@ -205,5 +221,4 @@
   <h6>© 2018 Eric Stenberg. This page is available under the Open Software License ("OSL") v 3.0.</h6>
  </footer>
  </body>
-<!--I'm adding this comment to test the git pull function-->
 </html>
