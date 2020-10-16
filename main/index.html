@@ -2,65 +2,87 @@
 <html>
   <head>
     <title>Home | Encoding/Decoding</title>
-    <meta name="description" content="Encoding/Decoding is an open source blog to find useful information and tutorials about various technologies, languages, and hardware.">
+    <meta name="description" content="Encoding/Decoding is an open source blog to find useful information about various technologies, languages, and hardware.">
     <meta name="robots" content="noodp,noydir">
     <meta name="author" content="Eric Stenberg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
  </head>
- <body>
+  <body>
     <header>
       <h1>Encoding/Decoding</h1>
-      <a href="https://www.linkedin.com/in/ericdstenberg">
-        <img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px">
-      </a>
-      <!--<a href="https://www.linkedin.com/in/ericdstenberg"></a>-->
-      <!--<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-      <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-      <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="ericdstenberg"><a class="LI-simple-link" href='https://www.linkedin.com/in/ericdstenberg?trk=profile-badge'>Eric Stenberg</a></div>
-      -->
-      <a href="https://github.com/ericstenberg">Github</a>
-      <a href="https://stackoverflow.com/users/10241858/ericstenberg">Stack Overflow</a>
-      <!--<a href="https://twitter.com/ericstenberg0">Twitter</a>
-      <a href="https://twitter.com/ericstenberg0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ericstenberg0</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      -->
+      <h2>Social Network</h2>
+
+      <a href="https://github.com/ericstenberg">
+        <img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
+      </a><br />
+      <a href="https://stackoverflow.com/users/10241858/ericstenberg">
+        <img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
+      </a><br />
+      <!--<a href="https://twitter.com/ericstenberg0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ericstenberg0</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      -->  
       <a href="https://twitter.com/ericstenberg0">
-        <img border="0" alt="LinkedIn" src="images/Twitter_Social_Icon_Square_Color.png" height="25px">
-      </a>
+        <img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
+      </a><br />
+      <a href="https://www.linkedin.com/in/ericdstenberg">
+        <img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
+      </a><br />
+      <!--<link rel="icon" href="C:\Users\ericd\Documents\Projects\EncodingDecoding\repo\main\images\Twitter_Social_Icon_Square_Color.png" />
+      -->
     </header>
-  <main>
-   <div id="Container">
-    <div id="ColumnCenterHome">
-      <h3><a href="websitesetup.html" class="BlogTitle"><span>Setting Up This Website</span></a></h3>
-      <div id="Paragraph">Setting up a website is often a good project for learning programming skill and generating interesting content. This post will cover some of the basics of HTML and CSS used on this site and will be updated with JavaScript, Python, and whatever else gets incorporated over time.</div>
-    </div>
-    <div id="ColumnLeft">
-     <h4>November 2018</h4>
+    <main>
+      <div id="Container">
+      <div id="ColumnCenterHome">
+        <h3><a href="websitesetup.html" class="BlogTitle"><span>Setting Up This Website</span></a></h3>
+        <div id="Paragraph">Setting up a website is often a good project for learning programming skill and generating interesting content. This post will cover some of the basics of HTML and CSS used on this site and will be updated with JavaScript, Python, and whatever else gets incorporated over time.</div>
+      </div>
+      <div id="ColumnLeft">
+        <!--<h4>November 2018</h4>-->
+        <h4 id="test"></h4>
+        <!--JavaScript date pull here
+          Procedure:
+          1. Pull json data into JavaScript readable format
+          2. Call out element where JavaScript will replace text
+          3. Iterate through JSON file, pulling out:
+            a. Titles
+            b. Links
+            c. Dates
+          4. 
+        <script>
+          var jsonData = require("data/data.json");
+          element = document.getElementById("test");
+          element.innerHTML = "test";
+          for(var i = 10; i > 0; --i){
+            element.innerHTML = jsonData.publishDate;
+          }
+
+        </script>
+      -->
      <ul>
       <li><a href="websitesetup.html">Setting Up Website</a></li>
      </ul>
     </div>
     <div id="ColumnRight">
-     <h4>Contact Links</h4>
-     <ul>
-      <li><a href="https://www.linkedin.com/in/ericdstenberg">LinkedIn</a></li>
-      <li><a href="https://github.com/ericstenberg">Github</a></li>
-      <li><a href="https://stackoverflow.com/users/10241858/ericstenberg">Stack Overflow</a></li>
-      <li><a href="https://twitter.com/ericstenberg0">Twitter</a></li>
-     </ul>
+      <!--<h4>Contact Links</h4>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/ericdstenberg">LinkedIn</a></li>
+          <li><a href="https://github.com/ericstenberg">Github</a></li>
+          <li><a href="https://stackoverflow.com/users/10241858/ericstenberg">Stack Overflow</a></li>
+          <li><a href="https://twitter.com/ericstenberg0">Twitter</a></li>
+        </ul>-->
    </div>
   </div>
  </main>
  <footer>
   <nav>
-   <strong>Home</strong>
-   <a href="about.html">About</a>
-   <a href="disclaimerandprivacypolicy.html">Disclaimer / Privacy Policy</a>
-   <a href="license.html">License</a>
-   <a href="contact.html">Contact</a>
+    <strong>Home</strong>
+    <a href="about.html">About</a>
+    <a href="disclaimerandprivacypolicy.html">Disclaimer / Privacy Policy</a>
+    </a><br />
   </nav>
-  <h6>© 2018 Eric Stenberg. This page is available under the Open Software License ("OSL") v 3.0.</h6>
+  <h6>This page is available under the GNU Affero General Public License v3.0.</h6>
+  <!--<script type="module" src="footer.js"></script>-->
  </footer>
  </body>
 </html>
