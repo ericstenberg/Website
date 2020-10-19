@@ -11,8 +11,8 @@
  </head>
   <body>
     <header>
-      <h1>Encoding/Decoding</h1>
-      <h2>Social Network</h2>
+      <h1><a href="index.html">Encoding/Decoding</a></h1>
+      <h2>Networking Links</h2>
 
       <a href="https://github.com/ericstenberg">
         <img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
@@ -28,17 +28,67 @@
       <a href="https://www.linkedin.com/in/ericdstenberg">
         <img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
       </a><br />
-      <!--<link rel="icon" href="C:\Users\ericd\Documents\Projects\EncodingDecoding\repo\main\images\Twitter_Social_Icon_Square_Color.png" />
-      -->
     </header>
     <main>
       <div id="Container">
       <div id="ColumnCenterHome">
+        <h3><a href="testpage5.html" class="BlogTitle"><span>Test Page 5</span></a></h3>
+		<h4>Published: October 19, 2020</h4>
+		<h4>Updated: October 19, 2020</h4>
+        <div id="Paragraph">This is the summary of test page 5. These are words that make up the summary. They should go over 80 characters and then move to newline.</div>
+		<br />
+        <h3><a href="testpage4.html" class="BlogTitle"><span>Test Page 4</span></a></h3>
+		<h4>Published: October 19, 2020</h4>
+		<h4>Updated: October 19, 2020</h4>
+        <div id="Paragraph">This is the summary of test page 4. These are words that make up the summary. They should go over 80 characters and then move to newline.</div>
+		<br />
+        <h3><a href="testpage3.html" class="BlogTitle"><span>Test Page 3</span></a></h3>
+		<h4>Published: October 19, 2020</h4>
+		<h4>Updated: October 19, 2020</h4>
+        <div id="Paragraph">This is the summary of test page 3. These are words that make up the summary. They should go over 80 characters and then move to newline.</div>
+		<br />
+        <h3><a href="testpage2.html" class="BlogTitle"><span>Test Page 2</span></a></h3>
+		<h4>Published: October 19, 2020</h4>
+		<h4>Updated: October 19, 2020</h4>
+        <div id="Paragraph">This is the summary of test page 2. These are words that make up the summary. They should go over 80 characters and then move to newline.</div>
+		<br />
+        <h3><a href="testpage1.html" class="BlogTitle"><span>Test Page 1</span></a></h3>
+		<h4>Published: October 19, 2020</h4>
+		<h4>Updated: October 19, 2020</h4>
+        <div id="Paragraph">This is the summary of test page 1. These are words that make up the summary. They should go over 80 characters and then move to newline.</div>
+		<br />
+        <h3><a href="testpage0.html" class="BlogTitle"><span>Test Page 0</span></a></h3>
+		<h4>Published: October 19, 2020</h4>
+		<h4>Updated: October 19, 2020</h4>
+        <div id="Paragraph">This is the summary of test page 0. These are words that make up the summary. They should go over 80 characters and then move to newline.</div>
+		<br />
         <h3><a href="websitesetup.html" class="BlogTitle"><span>Setting Up This Website</span></a></h3>
+		<h4>Published: September 27, 2018</h4>
+		<h4>Updated: October 19, 2020</h4>
         <div id="Paragraph">Setting up a website is often a good project for learning programming skill and generating interesting content. This post will cover some of the basics of HTML and CSS used on this site and will be updated with JavaScript, Python, and whatever else gets incorporated over time.</div>
       </div>
-      <div id="ColumnLeft">
-        <!--<h4>November 2018</h4>-->
+		<div id="ColumnLeft">
+			<h4>January 2021</h4>
+				<ul>
+					<li><a href="testpage7.html">Test Page 7</a></li>
+					<li><a href="testpage6.html">Test Page 6</a></li>
+				</ul>
+			<h4>December 2020</h4>
+				<ul>
+					<li><a href="testpage5.html">Test Page 5</a></li>
+					<li><a href="testpage4.html">Test Page 4</a></li>
+					<li><a href="testpage3.html">Test Page 3</a></li>
+				</ul>
+	  		<h4>November 2020</h4>
+				<ul>
+					<li><a href="testpage2.html">Test Page 2</a></li>
+				</ul>
+		<h4>October 2020</h4>
+		 <ul>
+			<li><a href="testpage1.html">Test Page 1</a></li>
+		  <li><a href="testpage0.html">Test Page 0</a></li>
+		 </ul>
+        <h4>November 2018</h4>
         <h4 id="test"></h4>
         <!--JavaScript date pull here
           Procedure:
@@ -49,16 +99,16 @@
             b. Links
             c. Dates
           4. 
+        -->
         <script>
-          var jsonData = require("data/data.json");
-          element = document.getElementById("test");
+          var jsonData = require("data/contentdata.json");
+          alert(jsonData[0].id);
+        /*  element = document.getElementById("test");
           element.innerHTML = "test";
           for(var i = 10; i > 0; --i){
             element.innerHTML = jsonData.publishDate;
-          }
-
+          }*/
         </script>
-      -->
      <ul>
       <li><a href="websitesetup.html">Setting Up Website</a></li>
      </ul>
@@ -77,10 +127,24 @@
  <footer>
   <nav>
     <strong>Home</strong>
-    <a href="about.html">About</a>
     <a href="disclaimerandprivacypolicy.html">Disclaimer / Privacy Policy</a>
-    </a><br />
+	<a href="https://github.com/ericstenberg/encodingdecoding/blob/master/LICENSE">License</a>
+    <br /><br />
   </nav>
+        <a href="https://github.com/ericstenberg">
+        <img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
+      </a>
+      <a href="https://stackoverflow.com/users/10241858/ericstenberg">
+        <img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
+      </a>
+      <!--<a href="https://twitter.com/ericstenberg0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ericstenberg0</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      -->  
+      <a href="https://twitter.com/ericstenberg0">
+        <img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
+      </a>
+      <a href="https://www.linkedin.com/in/ericdstenberg">
+        <img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
+      </a>
   <h6>This page is available under the GNU Affero General Public License v3.0.</h6>
   <!--<script type="module" src="footer.js"></script>-->
  </footer>
