@@ -1,0 +1,176 @@
+{
+	{
+		"pagenumber": 0,
+		"contentTitle": "Setting Up This Website",
+		"repository": "https://github.com/ericstenberg/encodingdecoding"
+		"summary": "Setting up a website is often a good project for learning programming skill and generating interesting content. This post will cover some of the basics of HTML and CSS used on this site and will be updated with JavaScript, Python, and whatever else gets incorporated over time.",
+		"tags": [
+			"HTML",
+			"CSS"
+		],
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	},
+	{
+		"pagenumber": 1,
+		"contentTitle": "Making Some Changes",
+		"repository": "https://github.com/ericstenberg/encodingdecoding",
+		"summary": "After a couple years away, I've returned to revamp my website with greater functionality.",
+		"tags": null,
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	},
+	{
+		"pagenumber": 2,
+		"contentTitle": "Test Page",
+		"repository": "N/A",
+		"summary": "This is a test summary.",
+		"tags": null,
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	},
+	{
+		"pagenumber": 3,
+		"contentTitle": "Making Some Changes",
+		"repository": "https://github.com/ericstenberg/encodingdecoding",
+		"summary": "After a couple years away, I've returned to revamp my website with greater functionality.",
+		"tags": null,
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	},
+	{
+		"pagenumber": 4,
+		"contentTitle": "Test Page",
+		"repository": "N/A",
+		"summary": "This is a test summary.",
+		"tags": null,
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	},
+	{
+		"pagenumber": 5,
+		"contentTitle": "Making Some Changes",
+		"repository": "https://github.com/ericstenberg/encodingdecoding",
+		"summary": "After a couple years away, I've returned to revamp my website with greater functionality.",
+		"tags": null,
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	},
+	{
+		"pagenumber": 6,
+		"contentTitle": "Test Page",
+		"repository": "N/A",
+		"summary": "This is a test summary.",
+		"tags": null,
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	},
+	{
+		"pagenumber": 7,
+		"contentTitle": "Making Some Changes",
+		"repository": "https://github.com/ericstenberg/encodingdecoding",
+		"summary": "After a couple years away, I've returned to revamp my website with greater functionality.",
+		"tags": null,
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	},
+	{
+		"pagenumber": 8,
+		"contentTitle": "Test Page",
+		"repository": "N/A",
+		"summary": "This is a test summary.",
+		"tags": null,
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	},
+	{
+		"pagenumber": 9,
+		"contentTitle": "Test Page",
+		"repository": "N/A",
+		"summary": "This is a test summary.",
+		"tags": null,
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	},
+	{
+		"pagenumber": 10,
+		"contentTitle": "Making Some Changes",
+		"repository": "https://github.com/ericstenberg/encodingdecoding",
+		"summary": "After a couple years away, I've returned to revamp my website with greater functionality.",
+		"tags": null,
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	},
+	{
+		"pagenumber": 11,
+		"contentTitle": "Test Page",
+		"repository": "N/A",
+		"summary": "This is a test summary.",
+		"tags": null,
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	},
+	{
+		"pagenumber": 12,
+		"contentTitle": "Making Some Changes",
+		"repository": "https://github.com/ericstenberg/encodingdecoding",
+		"summary": "After a couple years away, I've returned to revamp my website with greater functionality.",
+		"tags": null,
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	},
+	{
+		"pagenumber": 13,
+		"contentTitle": "Test Page",
+		"repository": "N/A",
+		"summary": "This is a test summary.",
+		"tags": null,
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	},
+	{
+		"pagenumber": 14,
+		"contentTitle": "Making Some Changes",
+		"repository": "https://github.com/ericstenberg/encodingdecoding",
+		"summary": "After a couple years away, I've returned to revamp my website with greater functionality.",
+		"tags": null,
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	},
+	{
+		"pagenumber": 15,
+		"contentTitle": "Test Page",
+		"repository": "N/A",
+		"summary": "This is a test summary.",
+		"tags": null,
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	},
+	{
+		"pagenumber": 16,
+		"contentTitle": "Making Some Changes",
+		"repository": "https://github.com/ericstenberg/encodingdecoding",
+		"summary": "After a couple years away, I've returned to revamp my website with greater functionality.",
+		"tags": null,
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	},
+	{
+		"pagenumber": 17,
+		"contentTitle": "Test Page",
+		"repository": "N/A",
+		"summary": "This is a test summary.",
+		"tags": null,
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	},
+	{
+		"pagenumber": 18,
+		"contentTitle": "Test Page",
+		"repository": "N/A",
+		"summary": "This is a test summary.",
+		"tags": null,
+		"publishDate": "2020/10/14",
+		"updateDate": "2020/10/14"
+	}
+}
