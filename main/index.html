@@ -30,9 +30,37 @@
 			<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
 		  </a><br />
     </header>
-    <main>
-      <div id="Container">
-      <div id="ColumnCenterHome">
+		<main>
+			 <div id="Container">
+				<div id="ColumnCenterHome"></div>
+			 		<script>
+						(function() {
+							var content = "http://localhost/repo/main/data/contentpages.json";
+							$.getJSON( content, {
+								tags: "pages",
+								tagmode: "any",
+								format: "json"
+							})
+							.done(function( data ) {
+								$.each( data.pages.reverse(), function( i, item ) {
+									$("#ColumnCenterHome").append(
+										"<a href=" + item.url + ">"
+										+ item.contentTitle
+										+ "</a><br />"
+										+ "Published Date: "
+										+ item.publishMonth + " "
+										+ item.publishDay + ", "
+										+ item.publishYear + "<br />"
+										+ "Updated Date: "
+										+ item.updateMonth + " "
+										+ item.updateDay + ", "
+										+ item.updateYear + "<br />"
+										+ item.summary + "<br /><br />");
+								});
+							  });
+							})();
+					</script>
+	  <!--
         <h3><a href="testpage5.html" class="BlogTitle"><span>Test Page 5</span></a></h3>
 		<h4>Published: October 19, 2020</h4>
 		<h4>Updated: October 19, 2020</h4>
@@ -67,11 +95,11 @@
 		<h4>Published: September 27, 2018</h4>
 		<h4>Updated: October 19, 2020</h4>
         <div id="Paragraph">Setting up a website is often a good project for learning programming skill and generating interesting content. This post will cover some of the basics of HTML and CSS used on this site and will be updated with JavaScript, Python, and whatever else gets incorporated over time.</div>
-      </div>
+		-->
 		<div id="ColumnLeft"></div>
 		<script>
 			(function() {
-				var content = "http://localhost/contentpages.json";
+				var content = "http://localhost/repo/main/data/contentpages.json";
 				$.getJSON( content, {
 					tags: "pages",
 					tagmode: "any",
