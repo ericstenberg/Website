@@ -1,119 +1,38 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Website Setup | Encoding/Decoding</title>
-		<meta name="description" content="Website Setup describes how to set up a basic website using HTML and CSS.">
-		<meta name="keywords" content="HTML,CSS">
-		<meta name="robots" content="noodp,noydir">
-		<meta name="author" content="Eric Stenberg">
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<link rel="stylesheet" href="styles.css">
-		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-	</head>
-	<body>
-		<header>
-			<h1>Encoding/Decoding</h1>
-			<h2>Networking Links</h2>
+ <head>
+  <title>Website Setup | Encoding/Decoding</title>
+  <meta name="description" content="Website Setup describes how to set up a basic website using HTML and CSS.">
+  <meta name="keywords" content="HTML,CSS">
+  <meta name="robots" content="noodp,noydir">
+  <meta name="author" content="Eric Stenberg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+  <header>
+   <h1>Encoding/Decoding</h1>
+	<h2>Connect with Me!</h2>
 
-		  <a href="https://github.com/ericstenberg">
-			<img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
-		  </a><br />
-		  <a href="https://stackoverflow.com/users/10241858/ericstenberg">
-			<img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
-		  </a><br />
-		  <!--<a href="https://twitter.com/ericstenberg0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ericstenberg0</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		  -->  
-		  <a href="https://twitter.com/ericstenberg0">
-			<img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
-		  </a><br />
-		  <a href="https://www.linkedin.com/in/ericdstenberg">
-			<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
-		  </a><br />
-		</header>
-	<main>
-		<div id="Container">
-			<div id="ColumnCenterOther">
-				<!--Content Title
-				Published Date:
-				Updated Date:
-				Repository:
-				Header:
-				-->
-				<div id="contentTitle"></div>
-				<div id="publishDate"></div>
-				<div id="updateDate"></div>
-				<div id="repository"></div>
-				<script>
-					(function() { // Current runs through database and finds
-								// article that corresponds to if statement.
-								// Not efficient. Need to optimize.
-						var content = "http://localhost/repo/main/data/contentpages.json";
-						$.getJSON( content, {
-							tags: "pages",
-							tagmode: "any",
-							format: "json"
-						})
-						.done(function( data ){
-							$.each(data.pages, function( i, item ){
-								if( i === 0 ){					
-									$("#contentTitle").html(item.contentTitle);
-									$("#publishDate").html("Published: "
-										+ item.publishMonth
-										+ " " + item.publishDay
-										+ ", " + item.publishYear);
-									$("#updateDate").html("Updated: "
-										+ item.updateMonth
-										+ " " + item.updateDay
-										+ ", " + item.updateYear);
-									if( item.repository != "NA" ){
-										$("#repository").html("Repository: <a href="
-											+ item.repository + ">"
-											+ item.repository);
-									} else {
-										$("#repository").html("Repository: NA");
-									}
-								};
-							});
-						});							
-					})();
-					
-												//$.each (data.pages, function (i , item){
-							//$.(data.pages[0], function (item){
-								//var idx = 0;
-								//if(i === 0){
-								//var j = 0;
-								//	$("#contentTitle").append(data.pages[0].contentTitle
-									//	+ "<br />");
-									/*$("#publishDate").append(item.eq( i ).publishMonth
-										+ " " + item.eq( i ).publishDay
-										+ ", " + item.eq( i ).publishYear
-										+ "<br />");
-									$("#updateDate").append(item.eq( i ).updateMonth
-										+ " " + item.eq( i ).updateDay
-										+ ", " + item.eq( i ).updateYear
-										+ "<br />");
-									$("#repository").append("<a href="
-										+ item.eq( i ).repository + ">"
-										+ item.eq( i ).repository + "</a><br />");*/
-									
-									/*
-									$("#contentTitle").append(data.pages.eq( idx ).contentTitle
-										+ "<br />");
-									$("#publishdate").append(data.pages.eq( idx ).publishMonth
-										+ " " + data.pages.eq( idx ).publishDay
-										+ ", " + data.pages.eq( idx ).publishYear
-										+ "<br />");
-									$("#updatedate").append(data.pages.eq( idx ).updateMonth
-										+ " " + data.pages.eq( idx ).updateDay
-										+ ", " + data.pages.eq( idx ).updateYear
-										+ "<br />");
-									$("#repository").append("<a href="
-										+ data.pages.eq( idx ).repository + ">"
-										+ data.pages.eq( idx ).repository + "</a><br />");*/
-								//}
-							//});
-				</script>
+      <a href="https://github.com/ericstenberg">
+        <img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
+      </a><br />
+      <a href="https://stackoverflow.com/users/10241858/ericstenberg">
+        <img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
+      </a><br />
+      <!--<a href="https://twitter.com/ericstenberg0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ericstenberg0</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      -->  
+      <a href="https://twitter.com/ericstenberg0">
+        <img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
+      </a><br />
+      <a href="https://www.linkedin.com/in/ericdstenberg">
+        <img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
+      </a><br />
+  </header>
+  <main>
+   <div id="Container">
+    <div id="ColumnCenterOther">
      <h2>Setting Up This Website</h2>
      <p><i>Github Repository: </i><a href="https://github.com/ericstenberg/encodingdecoding">encodingdecoding</a></p>
      <p>HTML and CSS form the backbone of this website. For a fuller understanding of the interaction of the elements underlying the site, right-click on any of these pages and click "View Page Source" or similar in whatever browser you use.</p>
