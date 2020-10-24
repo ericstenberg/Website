@@ -1,119 +1,85 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Website Setup | Encoding/Decoding</title>
-		<meta name="description" content="Website Setup describes how to set up a basic website using HTML and CSS.">
+		<title>Setting Up This Website | Encoding/Decoding</title>
+		<meta name="description" content="Setting Up This Website describes how to set up a basic website using HTML and CSS.">
 		<meta name="keywords" content="HTML,CSS">
 		<meta name="robots" content="noodp,noydir">
 		<meta name="author" content="Eric Stenberg">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<link rel="stylesheet" href="styles.css">
+		<!--<link rel="stylesheet" href="styles.css">-->
 		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<!--Facebook share script-->
+		<!--https://developers.facebook.com/docs/plugins/share-button/-->
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0" nonce="iboDDT39"></script>
+		<!--LinkedIn Share Code-->
+		<!--https://www.linkedin.com/help/linkedin/answer/46687/making-your-website-shareable-on-linkedin?lang=en-->
+		<meta property='og:title' content='Setting Up This Website | Encoding/Decoding'/>
+		<meta property='og:image' content='//media.example.com/ 1234567.jpg'/>
+		<meta property='og:description' content='Setting Up This Website describes how to set up a basic website using HTML and CSS.'/>
+		<meta property='og:url' content='/localhost/repo/main/websitesetup.html'/>
+
 	</head>
 	<body>
 		<header>
 			<h1>Encoding/Decoding</h1>
 			<h2>Networking Links</h2>
-
-		  <a href="https://github.com/ericstenberg">
-			<img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
-		  </a><br />
-		  <a href="https://stackoverflow.com/users/10241858/ericstenberg">
-			<img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
-		  </a><br />
-		  <!--<a href="https://twitter.com/ericstenberg0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ericstenberg0</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		  -->  
-		  <a href="https://twitter.com/ericstenberg0">
-			<img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
-		  </a><br />
-		  <a href="https://www.linkedin.com/in/ericdstenberg">
-			<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
-		  </a><br />
+			  <a href="https://github.com/ericstenberg">
+				<img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
+			  </a><br />
+			  <a href="https://stackoverflow.com/users/10241858/ericstenberg">
+				<img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
+			  </a><br />
+			  <a href="https://twitter.com/ericstenberg0">
+				<img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
+			  </a><br />
+			  <a href="https://www.linkedin.com/in/ericdstenberg">
+				<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
+			  </a><br />
 		</header>
-	<main>
-		<div id="Container">
-			<div id="ColumnCenterOther">
-				<!--Content Title
-				Published Date:
-				Updated Date:
-				Repository:
-				Header:
-				-->
-				<div id="contentTitle"></div>
-				<div id="publishDate"></div>
-				<div id="updateDate"></div>
-				<div id="repository"></div>
-				<script>
-					(function() { // Current runs through database and finds
-								// article that corresponds to if statement.
-								// Not efficient. Need to optimize.
-						var content = "http://localhost/repo/main/data/contentpages.json";
-						$.getJSON( content, {
-							tags: "pages",
-							tagmode: "any",
-							format: "json"
-						})
-						.done(function( data ){
-							$.each(data.pages, function( i, item ){
-								if( i === 0 ){					
-									$("#contentTitle").html(item.contentTitle);
-									$("#publishDate").html("Published: "
-										+ item.publishMonth
-										+ " " + item.publishDay
-										+ ", " + item.publishYear);
-									$("#updateDate").html("Updated: "
-										+ item.updateMonth
-										+ " " + item.updateDay
-										+ ", " + item.updateYear);
-									if( item.repository != "NA" ){
-										$("#repository").html("Repository: <a href="
-											+ item.repository + ">"
-											+ item.repository);
-									} else {
-										$("#repository").html("Repository: NA");
-									}
-								};
-							});
-						});							
-					})();
-					
-												//$.each (data.pages, function (i , item){
-							//$.(data.pages[0], function (item){
-								//var idx = 0;
-								//if(i === 0){
-								//var j = 0;
-								//	$("#contentTitle").append(data.pages[0].contentTitle
-									//	+ "<br />");
-									/*$("#publishDate").append(item.eq( i ).publishMonth
-										+ " " + item.eq( i ).publishDay
-										+ ", " + item.eq( i ).publishYear
-										+ "<br />");
-									$("#updateDate").append(item.eq( i ).updateMonth
-										+ " " + item.eq( i ).updateDay
-										+ ", " + item.eq( i ).updateYear
-										+ "<br />");
-									$("#repository").append("<a href="
-										+ item.eq( i ).repository + ">"
-										+ item.eq( i ).repository + "</a><br />");*/
-									
-									/*
-									$("#contentTitle").append(data.pages.eq( idx ).contentTitle
-										+ "<br />");
-									$("#publishdate").append(data.pages.eq( idx ).publishMonth
-										+ " " + data.pages.eq( idx ).publishDay
-										+ ", " + data.pages.eq( idx ).publishYear
-										+ "<br />");
-									$("#updatedate").append(data.pages.eq( idx ).updateMonth
-										+ " " + data.pages.eq( idx ).updateDay
-										+ ", " + data.pages.eq( idx ).updateYear
-										+ "<br />");
-									$("#repository").append("<a href="
-										+ data.pages.eq( idx ).repository + ">"
-										+ data.pages.eq( idx ).repository + "</a><br />");*/
-								//}
-							//});
-				</script>
+		<main>
+			<div id="Container">
+				<div id="ColumnCenterOther">
+					<div id="contentTitle"></div>
+					<div id="publishDate"></div>
+					<div id="updateDate"></div>
+					<div id="repository"></div>
+					<script>
+						(function() { // Currently runs through database and finds
+									// article that corresponds to if statement.
+									// Not efficient. Need to optimize.
+							var content = "http://localhost/repo/main/data/contentpages.json";
+							$.getJSON( content, {
+								tags: "pages",
+								tagmode: "any",
+								format: "json"
+							})
+							.done(function( data ){
+								$.each(data.pages, function( i, item ){
+									if( i === 0 ){					
+										$("#contentTitle").html(item.contentTitle);
+										$("#publishDate").html("Published: "
+											+ item.publishMonth
+											+ " " + item.publishDay
+											+ ", " + item.publishYear);
+										$("#updateDate").html("Updated: "
+											+ item.updateMonth
+											+ " " + item.updateDay
+											+ ", " + item.updateYear);
+										if( item.repository != "NA" ){
+											$("#repository").html("Repository: <a href="
+												+ item.repository + ">"
+												+ item.repository);
+										} else {
+											$("#repository").html("Repository: NA");
+										}
+									};
+								});
+							});							
+						})();
+					</script>
      <h2>Setting Up This Website</h2>
      <p><i>Github Repository: </i><a href="https://github.com/ericstenberg/encodingdecoding">encodingdecoding</a></p>
      <p>HTML and CSS form the backbone of this website. For a fuller understanding of the interaction of the elements underlying the site, right-click on any of these pages and click "View Page Source" or similar in whatever browser you use.</p>
@@ -300,33 +266,57 @@
       <li><a href="https://www.firstscribe.com/google-change-title-description-search-results/">First Scribe Blog - Why Doesn't Google Use My Title Tag and Meta Description In Search Results?</a></li>
      </ol>
     </div>
-    <div id="ColumnLeft">
-     <h4>November 2018</h4>
-     <ul>
-      <li><a href="websitesetup.html">Setting Up Website</a></li>
-     </ul>
-    </div>
+    <div id="ColumnLeft"></div>
+		<script>
+			(function() {
+				var content = "http://localhost/repo/main/data/contentpages.json";
+				$.getJSON( content, {
+					tags: "pages",
+					tagmode: "any",
+					format: "json"
+				})
+				.done(function( data ) {
+					var j = data.pages.length - 0;
+					// https://stackoverflow.com/questions/453209/how-do-i-get-the-total-json-record-count-using-jquery
+					$.each( data.pages.reverse(), function( i, item ) {
+						if(i > (j - 6) && i < (j + 3)){
+							$("#ColumnLeft").append(item.publishMonth + " " + item.publishDay
+								+ ", " + item.publishYear + "<br />"
+								+ "<a href=" + item.url + ">" + item.contentTitle
+								+ "</a><br /><br />");
+						}
+					});
+				  });
+				})();
+        </script>
 	<div id="ColumnRight">
-      <!--<h4>Contact Links</h4>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/ericdstenberg">LinkedIn</a></li>
-          <li><a href="https://github.com/ericstenberg">Github</a></li>
-          <li><a href="https://stackoverflow.com/users/10241858/ericstenberg">Stack Overflow</a></li>
-          <li><a href="https://twitter.com/ericstenberg0">Twitter</a></li>
-        </ul>-->
-		Share this article!
+		<!--Share this article!-->
+		<!--Twitter-->
+		<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://stackoverflow.com/users/10241858/ericstenberg" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<!--Reddit-->
+		
+
+		<!--Facebook-->
+		<div class="fb-share-button" data-href="https://stackoverflow.com/users/10241858/ericstenberg" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstackoverflow.com%2Fusers%2F10241858%2Fericstenberg&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+		<!--Pinterist
+		LinkedIn
+		Email
+		WhatsApp
+		Text
+		Bookmark
+		-->
+
+		
    </div>
   </div>
- </main>
- <footer>
-  <nav>
-   <a href="index.html">Home</a>
-   <a href="about.html">About</a>
-   <a href="disclaimerandprivacypolicy.html">Disclaimer / Privacy Policy</a>
-   <a href="license.html">License</a>
-   <a href="contact.html">Contact</a>
-  </nav>
-  <h6>© 2018 Eric Stenberg. This page is available under the Open Software License ("OSL") v 3.0.</h6>
- </footer>
- </body>
+	</main>
+		<footer>
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="disclaimerandprivacypolicy.html">Disclaimer / Privacy Policy</a>
+				<a href="https://github.com/ericstenberg/encodingdecoding/blob/master/LICENSE">License</a>
+			</nav>
+			<h6>This page is available under the GNU Affero General Public License v3.0.</h6>
+		</footer>
+	</body>
 </html>
