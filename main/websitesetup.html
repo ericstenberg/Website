@@ -8,7 +8,7 @@
 		<meta name="author" content="Eric Stenberg">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<!--<link rel="stylesheet" href="styles.css">-->
+		<link rel="stylesheet" href="styles.css">
 		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 		<!--Facebook share script-->
 		<!--https://developers.facebook.com/docs/plugins/share-button/-->
@@ -20,32 +20,34 @@
 		<meta property='og:image' content='//media.example.com/ 1234567.jpg'/>
 		<meta property='og:description' content='Setting Up This Website describes how to set up a basic website using HTML and CSS.'/>
 		<meta property='og:url' content='/localhost/repo/main/websitesetup.html'/>
-
 	</head>
 	<body>
 		<header>
-			<h1>Encoding/Decoding</h1>
-			<h2>Networking Links</h2>
-			  <a href="https://github.com/ericstenberg">
-				<img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
-			  </a><br />
-			  <a href="https://stackoverflow.com/users/10241858/ericstenberg">
-				<img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
-			  </a><br />
-			  <a href="https://twitter.com/ericstenberg0">
-				<img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
-			  </a><br />
-			  <a href="https://www.linkedin.com/in/ericdstenberg">
-				<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
-			  </a><br />
+			<h1><a href="index.html">Encoding/Decoding</a></h1>
+			<div id="networkinglinkstitle">Networking Links</div>
+			<div id="networkinglinks">
+				<a href="https://github.com/ericstenberg">
+					<img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
+				</a>
+				<a href="https://stackoverflow.com/users/10241858/ericstenberg">
+					<img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
+				</a>
+				<a href="https://twitter.com/ericstenberg0">
+					<img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
+				</a>
+				<a href="https://www.linkedin.com/in/ericdstenberg">
+					<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
+				</a>
+			</div>
 		</header>
 		<main>
 			<div id="Container">
 				<div id="ColumnCenterOther">
-					<div id="contentTitle"></div>
+					<h2><div id="contentTitle"></div></h2>
 					<div id="publishDate"></div>
 					<div id="updateDate"></div>
 					<div id="repository"></div>
+					<br />
 					<script>
 						(function() { // Currently runs through database and finds
 									// article that corresponds to if statement.
@@ -57,8 +59,9 @@
 								format: "json"
 							})
 							.done(function( data ){
+								var articleID = 0
 								$.each(data.pages, function( i, item ){
-									if( i === 0 ){					
+									if( i === articleID ){					
 										$("#contentTitle").html(item.contentTitle);
 										$("#publishDate").html("Published: "
 											+ item.publishMonth
@@ -80,8 +83,10 @@
 							});							
 						})();
 					</script>
-     <h2>Setting Up This Website</h2>
-     <p><i>Github Repository: </i><a href="https://github.com/ericstenberg/encodingdecoding">encodingdecoding</a></p>
+     <!--<h2>Setting Up This Website</h2>
+     <p><i>Github Repository: </i><a href="https://github.com/ericstenberg/encodingdecoding">encodingdecoding</a></p>-->
+	 
+	 <h3>Introduction</h3>
      <p>HTML and CSS form the backbone of this website. For a fuller understanding of the interaction of the elements underlying the site, right-click on any of these pages and click "View Page Source" or similar in whatever browser you use.</p>
      <p>The basic elements used on this website are below. By no means is this an exhaustive list, but should be used as a starting point. Let's begin!</p>
      <h3>HTML (Hypertext Markup Language)</h3>
@@ -178,94 +183,122 @@
      <p><b><span><</span>meta name="author" content="Firstname Lastname"<span>></span></b></p>
      <p>Upon further review, it was discovered that my name was not added to the website. From a marketing and brand perspective, this is not great due to the disassociation between the two. As such, the line above connects the two.<sup>5</sup>     
      <h3>Tags</h3>
-     <ul>
-      <li>HTML</li>
-      <li>CSS</li>
+	 <div id="tag">
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<!--<li><div id="articletags"></div></li>
+			<script>
+				(function() { // Currently runs through database and finds
+							// article that corresponds to if statement.
+							// Not efficient. Need to optimize.
+					var content = "http://localhost/repo/main/data/contentpages.json";
+					$.getJSON( content, {
+						tags: "pages",
+						tagmode: "any",
+						format: "json"
+					})
+					.done(function( data ){
+						var articleID = 0
+						$.each(data.pages, function( i, item ){
+							if( i === articleID ){
+								for(var k = 0; k < item.tags.length; k++){
+									$("#articletags").append(item.tags[k]);
+								};
+							};
+						});
+					});							
+				})();
+			</script>-->
      </ul>
+	 </div>
      <h3>References</h3>
-     <ol>
-<!--1-->
-      <li><a href="https://www.w3schools.com/tags/tag_doctype.asp">W3 Schools - HTML Doctype Declaration</a></li>
-<!--2-->
-      <li><a href="https://www.w3schools.com/tags/tag_html.asp">W3 Schools - HTML HTML Tag</a></li>
-<!--3-->
-      <li><a href="https://www.w3schools.com/tags/tag_head.asp">W3 Schools - HTML Head Tag</a></li>
-<!--4-->
-      <li><a href="https://www.w3schools.com/tags/tag_title.asp">W3 Schools - HTML Title Tag</a></li>
-<!--5-->
-      <li><a href="https://www.w3schools.com/tags/tag_meta.asp">W3 Schools - HTML Meta Tag</a></li>
-<!--6-->
-      <li><a href="https://www.w3schools.com/tags/att_link_rel.asp">W3 Schools - HTML Link Rel Attribute</a></li>
-<!--7-->
-      <li><a href="https://www.w3schools.com/tags/tag_body.asp">W3 Schools - HTML Body Tag</a></li>
-<!--8-->
-      <li><a href="https://www.w3schools.com/tags/tag_header.asp">W3 Schools - HTML Header Tag</a></li>
-<!--9-->
-      <li><a href="https://www.w3schools.com/tags/tag_main.asp">W3 Schools - HTML Main Tag</a></li>
-<!--10-->
-      <li><a href="https://www.w3schools.com/TAgs/tag_footer.asp">W3 Schools - HTML Footer Tag</a></li>
-<!--11-->
-      <li><a href="https://www.w3schools.com/Tags/tag_div.asp">W3 Schools - HTML Div Tag</a></li>
-<!--12-->
-      <li><a href="https://www.w3schools.com/tags/att_a_href.asp">W3 Schools - HTML A Href Tag</a></li>
-<!--13-->
-      <li><a href="https://stackoverflow.com/questions/2789703/remove-stubborn-underline-from-link#2789864">Stack Overflow - Removing Stubborn Underline From Link</a></li>
-<!--14-->
-      <li><a href="https://stackoverflow.com/questions/15175312/increase-font-size-of-hyperlink-text-html#15175330">Stack Overflow - Increase Font Size Of Hyperlink Text Html</a></li>
-<!--15-->
-      <li><a href="https://www.w3schools.com/html/html_headings.asp">W3 Schools - HTML Headings</a></li>
-<!--16-->
-      <li><a href="https://www.w3schools.com/tags/tag_ul.asp">W3 Schools - HTML Ul Tag</a></li>
-<!--17-->
-      <li><a href="https://www.w3schools.com/TAGs/tag_ol.asp">W3 Schools - HTML Ol Tag</a></li>
-<!--18-->
-      <li><a href="https://www.w3schools.com/TAGS/tag_li.asp">W3 Schools - HTML Li Tag</a></li>
-<!--19-->
-      <li><a href="https://www.w3schools.com/tags/tag_sup.asp">W3 Schools - HTML Sup Tag</a></li>
-<!--20-->
-      <li><a href="https://www.w3schools.com/TAGS/tag_br.asp">W3 Schools - HTML Br Tag</a></li>
-<!--21-->
-      <li><a href="https://www.w3schools.com/tags/tag_span.asp">W3 Schools - HTML Span Tag</a></li>
-<!--22-->
-      <li><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">Wikipedia - Cascading Style Sheets</a></li>
-<!--23-->
-      <li><a href="https://sass-lang.com/">Sass: Syntactically Awesome Style Sheets</a></li>
-<!--24-->
-      <li><a href="https://sass-lang.com/guide">Sass: Sass Basics</a></li>
-<!--25-->
-      <li><a href="https://www.w3schools.com/CSSref/pr_padding.asp">W3 Schools - CSS Padding Property</a></li>
-<!--26-->
-      <li><a href="https://www.w3schools.com/Css/css_margin.asp">W3 Schools - CSS Margin</a></li>
-<!--27-->
-      <li><a href="https://stackoverflow.com/questions/5958699/difference-between-margin-and-padding">Stack Overflow - CSS - Difference Between Margin and Padding?</a></li>
-<!--28-->
-      <li><a href="https://www.w3schools.com/cssref/pr_dim_height.asp">W3 Schools - CSS Height Property</a></li>
-<!--29-->
-      <li><a href="https://www.w3schools.com/CSSref/pr_dim_width.asp">W3 Schools - CSS Width Property</a></li>
-<!--30-->
-      <li><a href="https://www.w3schools.com/Css/css_positioning.asp">W3 Schools - CSS Layout - The Position Property</a></li>
-<!--31-->
-      <li><a href="https://www.w3schools.com/cssref/pr_class_position.asp">W3 Schools - CSS Position Property</a></li>
-<!--32-->
-      <li><a href="https://www.w3schools.com/cssref/pr_pos_bottom.asp">W3 Schools - CSS Bottom Property</a></li>
-<!--33-->
-      <li><a href="https://www.w3schools.com/cssref/pr_text_text-align.asp">W3 Schools - CSS Text-Align Property</a></li>
-<!--34-->
-      <li><a href="https://www.w3schools.com/css/css_border.asp">W3 Schools - CSS Borders</a></li>
-<!--35-->
-      <li><a href="https://www.w3schools.com/cssref/pr_font_font-size.asp">W3 Schools - CSS Font-Size Property</a></li>
-<!--36-->
-      <li><a href="https://www.w3schools.com/CSSref/pr_text_color.asp">W3 Schools - CSS Color Property</a></li>
-<!--37-->
-      <li><a href="https://www.w3schools.com/cssref/pr_text_text-decoration.asp">W3 Schools - CSS Text-Decoration Property</a></li>
-<!--38-->
-      <li><a href="https://www.w3schools.com/CSSref/pr_class_display.asp">W3 Schools - CSS Display Property</a></li>
-<!--39-->
-      <li><a href="https://www.w3schools.com/csSref/pr_text_text-indent.asp">W3 Schools - CSS Text-Indent Property</a></li>
-<!--40-->
-      <li><a href="https://www.firstscribe.com/google-change-title-description-search-results/">First Scribe Blog - Why Doesn't Google Use My Title Tag and Meta Description In Search Results?</a></li>
-     </ol>
+		 <div id="references">
+			 <ol>
+			<!--1-->
+				 <li><a href="https://www.w3schools.com/tags/tag_doctype.asp">W3 Schools - HTML Doctype Declaration</a></li>
+			<!--2-->
+				 <li><a href="https://www.w3schools.com/tags/tag_html.asp">W3 Schools - HTML HTML Tag</a></li>
+			<!--3-->
+				 <li><a href="https://www.w3schools.com/tags/tag_head.asp">W3 Schools - HTML Head Tag</a></li>
+			<!--4-->
+				 <li><a href="https://www.w3schools.com/tags/tag_title.asp">W3 Schools - HTML Title Tag</a></li>
+			<!--5-->
+				 <li><a href="https://www.w3schools.com/tags/tag_meta.asp">W3 Schools - HTML Meta Tag</a></li>
+			<!--6-->
+				 <li><a href="https://www.w3schools.com/tags/att_link_rel.asp">W3 Schools - HTML Link Rel Attribute</a></li>
+			<!--7-->
+				 <li><a href="https://www.w3schools.com/tags/tag_body.asp">W3 Schools - HTML Body Tag</a></li>
+			<!--8-->
+				 <li><a href="https://www.w3schools.com/tags/tag_header.asp">W3 Schools - HTML Header Tag</a></li>
+			<!--9-->
+				 <li><a href="https://www.w3schools.com/tags/tag_main.asp">W3 Schools - HTML Main Tag</a></li>
+			<!--10-->
+				 <li><a href="https://www.w3schools.com/TAgs/tag_footer.asp">W3 Schools - HTML Footer Tag</a></li>
+			<!--11-->
+				 <li><a href="https://www.w3schools.com/Tags/tag_div.asp">W3 Schools - HTML Div Tag</a></li>
+			<!--12-->
+				 <li><a href="https://www.w3schools.com/tags/att_a_href.asp">W3 Schools - HTML A Href Tag</a></li>
+			<!--13-->
+				 <li><a href="https://stackoverflow.com/questions/2789703/remove-stubborn-underline-from-link#2789864">Stack Overflow - Removing Stubborn Underline From Link</a></li>
+			<!--14-->
+				 <li><a href="https://stackoverflow.com/questions/15175312/increase-font-size-of-hyperlink-text-html#15175330">Stack Overflow - Increase Font Size Of Hyperlink Text Html</a></li>
+			<!--15-->
+				 <li><a href="https://www.w3schools.com/html/html_headings.asp">W3 Schools - HTML Headings</a></li>
+			<!--16-->
+				 <li><a href="https://www.w3schools.com/tags/tag_ul.asp">W3 Schools - HTML Ul Tag</a></li>
+			<!--17-->
+				 <li><a href="https://www.w3schools.com/TAGs/tag_ol.asp">W3 Schools - HTML Ol Tag</a></li>
+			<!--18-->
+				 <li><a href="https://www.w3schools.com/TAGS/tag_li.asp">W3 Schools - HTML Li Tag</a></li>
+			<!--19-->
+				 <li><a href="https://www.w3schools.com/tags/tag_sup.asp">W3 Schools - HTML Sup Tag</a></li>
+			<!--20-->
+				 <li><a href="https://www.w3schools.com/TAGS/tag_br.asp">W3 Schools - HTML Br Tag</a></li>
+			<!--21-->
+				 <li><a href="https://www.w3schools.com/tags/tag_span.asp">W3 Schools - HTML Span Tag</a></li>
+			<!--22-->
+				 <li><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">Wikipedia - Cascading Style Sheets</a></li>
+			<!--23-->
+				 <li><a href="https://sass-lang.com/">Sass: Syntactically Awesome Style Sheets</a></li>
+			<!--24-->
+				 <li><a href="https://sass-lang.com/guide">Sass: Sass Basics</a></li>
+			<!--25-->
+				 <li><a href="https://www.w3schools.com/CSSref/pr_padding.asp">W3 Schools - CSS Padding Property</a></li>
+			<!--26-->
+				 <li><a href="https://www.w3schools.com/Css/css_margin.asp">W3 Schools - CSS Margin</a></li>
+			<!--27-->
+				 <li><a href="https://stackoverflow.com/questions/5958699/difference-between-margin-and-padding">Stack Overflow - CSS - Difference Between Margin and Padding?</a></li>
+			<!--28-->
+				 <li><a href="https://www.w3schools.com/cssref/pr_dim_height.asp">W3 Schools - CSS Height Property</a></li>
+			<!--29-->
+				 <li><a href="https://www.w3schools.com/CSSref/pr_dim_width.asp">W3 Schools - CSS Width Property</a></li>
+			<!--30-->
+				 <li><a href="https://www.w3schools.com/Css/css_positioning.asp">W3 Schools - CSS Layout - The Position Property</a></li>
+			<!--31-->
+				 <li><a href="https://www.w3schools.com/cssref/pr_class_position.asp">W3 Schools - CSS Position Property</a></li>
+			<!--32-->
+				 <li><a href="https://www.w3schools.com/cssref/pr_pos_bottom.asp">W3 Schools - CSS Bottom Property</a></li>
+			<!--33-->
+				 <li><a href="https://www.w3schools.com/cssref/pr_text_text-align.asp">W3 Schools - CSS Text-Align Property</a></li>
+			<!--34-->
+				 <li><a href="https://www.w3schools.com/css/css_border.asp">W3 Schools - CSS Borders</a></li>
+			<!--35-->
+				 <li><a href="https://www.w3schools.com/cssref/pr_font_font-size.asp">W3 Schools - CSS Font-Size Property</a></li>
+			<!--36-->
+				 <li><a href="https://www.w3schools.com/CSSref/pr_text_color.asp">W3 Schools - CSS Color Property</a></li>
+			<!--37-->
+				 <li><a href="https://www.w3schools.com/cssref/pr_text_text-decoration.asp">W3 Schools - CSS Text-Decoration Property</a></li>
+			<!--38-->
+				 <li><a href="https://www.w3schools.com/CSSref/pr_class_display.asp">W3 Schools - CSS Display Property</a></li>
+			<!--39-->
+				 <li><a href="https://www.w3schools.com/csSref/pr_text_text-indent.asp">W3 Schools - CSS Text-Indent Property</a></li>
+			<!--40-->
+				 <li><a href="https://www.firstscribe.com/google-change-title-description-search-results/">First Scribe Blog - Why Doesn't Google Use My Title Tag and Meta Description In Search Results?</a></li>
+			 </ol>
+		 </div>
     </div>
+	<h3>Adjacent Links</h3>
     <div id="ColumnLeft"></div>
 		<script>
 			(function() {
@@ -289,34 +322,44 @@
 				  });
 				})();
         </script>
-	<div id="ColumnRight">
-		<!--Share this article!-->
-		<!--Twitter-->
-		<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://stackoverflow.com/users/10241858/ericstenberg" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		<!--Reddit-->
-		
-
-		<!--Facebook-->
-		<div class="fb-share-button" data-href="https://stackoverflow.com/users/10241858/ericstenberg" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstackoverflow.com%2Fusers%2F10241858%2Fericstenberg&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-		<!--Pinterist
-		LinkedIn
-		Email
-		WhatsApp
-		Text
-		Bookmark
-		-->
-
-		
-   </div>
-  </div>
+		<div id="ColumnRight">
+			<h3>Share this article!</h3>
+			<!--Twitter-->
+			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://stackoverflow.com/users/10241858/ericstenberg" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<!--Reddit-->
+			<!--Facebook-->
+			<div class="fb-share-button" data-href="https://stackoverflow.com/users/10241858/ericstenberg" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstackoverflow.com%2Fusers%2F10241858%2Fericstenberg&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+			<!--Pinterist
+			LinkedIn
+			Email
+			WhatsApp
+			Text
+			Bookmark
+			-->		
+		</div>
+	</div>
 	</main>
 		<footer>
+			<div id="networkinglinks">
+				<a href="https://github.com/ericstenberg">
+					<img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
+				</a>
+				<a href="https://stackoverflow.com/users/10241858/ericstenberg">
+					<img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
+				</a>
+				<a href="https://twitter.com/ericstenberg0">
+					<img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
+				</a>
+				<a href="https://www.linkedin.com/in/ericdstenberg">
+					<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
+				</a>
+			</div>
 			<nav>
-				<a href="index.html">Home</a>
-				<a href="disclaimerandprivacypolicy.html">Disclaimer / Privacy Policy</a>
+				<a href="http://localhost/repo/main/index.html">Home</a>
+				<!--<a href="disclaimerandprivacypolicy.html">Disclaimer / Privacy Policy</a>-->
 				<a href="https://github.com/ericstenberg/encodingdecoding/blob/master/LICENSE">License</a>
 			</nav>
-			<h6>This page is available under the GNU Affero General Public License v3.0.</h6>
+			<div id="license">This page is available under the GNU Affero General Public License v3.0.</div>
 		</footer>
 	</body>
 </html>

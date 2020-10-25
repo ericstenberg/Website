@@ -12,27 +12,30 @@
 	</head>
 	<body>
 		<header>
-		  <h1><a href="index.html">Encoding/Decoding</a></h1>
-		  <h2>Networking Links</h2>
-
-		  <a href="https://github.com/ericstenberg">
+			<h1><a href="index.html">Encoding/Decoding</a></h1>
+			<h3>Networking Links</h3>
+			<a href="https://github.com/ericstenberg">
 			<img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
-		  </a><br />
-		  <a href="https://stackoverflow.com/users/10241858/ericstenberg">
+			</a>
+			<a href="https://stackoverflow.com/users/10241858/ericstenberg">
 			<img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
-		  </a><br />
-		  <!--<a href="https://twitter.com/ericstenberg0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ericstenberg0</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		  -->  
-		  <a href="https://twitter.com/ericstenberg0">
+			</a>
+			<!--<a href="https://twitter.com/ericstenberg0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ericstenberg0</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			-->  
+			<a href="https://twitter.com/ericstenberg0">
 			<img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
-		  </a><br />
-		  <a href="https://www.linkedin.com/in/ericdstenberg">
+			</a>
+			<a href="https://www.linkedin.com/in/ericdstenberg">
 			<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
-		  </a><br />
+			</a>
     </header>
 		<main>
 			 <div id="Container">
-				<div id="ColumnCenterHome"></div>
+				<div id="ColumnCenter"></div>
+					<h3><div id="contentTitle"></div></h3>
+					<div id="publishDate"></div>
+					<div id="updateDate"></div>
+					<div id="summary"></div>
 			 		<script>
 						(function() {
 							var content = "http://localhost/repo/main/data/contentpages.json";
@@ -42,25 +45,25 @@
 								format: "json"
 							})
 							.done(function( data ) {
-								$.each( data.pages.reverse(), function( i, item ) {
-									$("#ColumnCenterHome").append(
+								$.each(data.pages.reverse(), function( i, item ) {
+									$("#contentTitle").append(
 										"<a href=" + item.url + ">"
 										+ item.contentTitle
-										+ "</a><br />"
-										+ "Published Date: "
+										+ "</a><br>");
+									$("#publishDate").append("Published Date: "
 										+ item.publishMonth + " "
 										+ item.publishDay + ", "
-										+ item.publishYear + "<br />"
-										+ "Updated Date: "
+										+ item.publishYear + "<br />");
+									$("#updateDate").append("Updated Date: "
 										+ item.updateMonth + " "
 										+ item.updateDay + ", "
-										+ item.updateYear + "<br />"
-										+ item.summary + "<br /><br />");
+										+ item.updateYear + "<br />");
+									$("#summary").append(item.summary + "<br /><br />");
 								});
 							  });
 							})();
 					</script>
-		<h2>Latest Posts</h2>
+		<h3>Latest Posts</h3>
 		<div id="ColumnLeft"></div>
 
 		<script>
@@ -101,7 +104,7 @@
 		<!--<button type="button" onclick="window.location.href='page2.html'">Next Page</button>
 		<br /><br />-->
 		<strong>Home</strong>
-		<a href="disclaimerandprivacypolicy.html">Disclaimer / Privacy Policy</a>
+		<!--<a href="disclaimerandprivacypolicy.html">Disclaimer / Privacy Policy</a>-->
 		<a href="https://github.com/ericstenberg/encodingdecoding/blob/master/LICENSE">License</a>
 		<br /><br />
 	  </nav>
@@ -119,7 +122,7 @@
       <a href="https://www.linkedin.com/in/ericdstenberg">
         <img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
       </a>
-  <h6>This page is available under the GNU Affero General Public License v3.0.</h6>
+			<div id="license">This page is available under the GNU Affero General Public License v3.0.</div>
   <!--<script type="module" src="footer.js"></script>-->
  </footer>
  </body>
