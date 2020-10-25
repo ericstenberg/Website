@@ -13,7 +13,7 @@
 	<body>
 		<header>
 			<h1><a href="index.html">Encoding/Decoding</a></h1>
-			<h3>Networking Links</h3>
+			<div id="networkinglinkstitle">Networking Links</div>
 			<a href="https://github.com/ericstenberg">
 			<img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
 			</a>
@@ -32,10 +32,7 @@
 		<main>
 			 <div id="Container">
 				<div id="ColumnCenter"></div>
-					<h3><div id="contentTitle"></div></h3>
-					<div id="publishDate"></div>
-					<div id="updateDate"></div>
-					<div id="summary"></div>
+					<div id="contentData"></div>
 			 		<script>
 						(function() {
 							var content = "http://localhost/repo/main/data/contentpages.json";
@@ -46,57 +43,50 @@
 							})
 							.done(function( data ) {
 								$.each(data.pages.reverse(), function( i, item ) {
-									$("#contentTitle").append(
-										"<a href=" + item.url + ">"
+									$("#contentData").append(
+										"<h2><div id=contentTitle><a href=" // Remove space between contentTitle and Published Date
+										+ item.url + ">"
 										+ item.contentTitle
-										+ "</a><br>");
-									$("#publishDate").append("Published Date: "
+										+ "</a></div></h2><br>"
+										+ "Published Date: "
 										+ item.publishMonth + " "
 										+ item.publishDay + ", "
-										+ item.publishYear + "<br />");
-									$("#updateDate").append("Updated Date: "
+										+ item.publishYear + "<br />"
+										+ "Updated Date: "
 										+ item.updateMonth + " "
 										+ item.updateDay + ", "
-										+ item.updateYear + "<br />");
-									$("#summary").append(item.summary + "<br /><br />");
+										+ item.updateYear + "<br />"
+										+ "<div id=summary>"
+										+ item.summary
+										+ "</div><br />")
 								});
 							  });
 							})();
 					</script>
-		<h3>Latest Posts</h3>
+		<h3><div id="latestposts">Latest Posts</div></h3>
 		<div id="ColumnLeft"></div>
-
-		<script>
-			(function() {
-				var content = "http://localhost/repo/main/data/contentpages.json";
-				$.getJSON( content, {
-					tags: "pages",
-					tagmode: "any",
-					format: "json"
-				})
-				.done(function( data ) {
-					$.each( data.pages.reverse(), function( i, item ) {
-						$("#ColumnLeft").append(item.publishMonth + " " + item.publishDay
-							+ ", " + item.publishYear + "<br />"
-							+ "<a href=" + item.url + ">" + item.contentTitle
-							+ "</a><br /><br />");
-						if(i > 8){
-							return false;
-						}
-					});
-				  });
-				})();
-        </script>
-	
-    <div id="ColumnRight">
-      <!--<h4>Contact Links</h4>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/ericdstenberg">LinkedIn</a></li>
-          <li><a href="https://github.com/ericstenberg">Github</a></li>
-          <li><a href="https://stackoverflow.com/users/10241858/ericstenberg">Stack Overflow</a></li>
-          <li><a href="https://twitter.com/ericstenberg0">Twitter</a></li>
-        </ul>-->
-   </div>
+			<script>
+				(function() {
+					var content = "http://localhost/repo/main/data/contentpages.json";
+					$.getJSON( content, {
+						tags: "pages",
+						tagmode: "any",
+						format: "json"
+					})
+					.done(function( data ) {
+						$.each( data.pages.reverse(), function( i, item ) {
+							$("#ColumnLeft").append(item.publishMonth + " " + item.publishDay
+								+ ", " + item.publishYear + "<br />"
+								+ "<a href=" + item.url + ">" + item.contentTitle
+								+ "</a><br /><br />");
+							if(i > 8){
+								return false;
+							}
+						});
+					  });
+					})();
+			</script>
+		<div id="ColumnRight"></div>
   </div>
 	</main>
 	<footer>
@@ -122,6 +112,7 @@
       <a href="https://www.linkedin.com/in/ericdstenberg">
         <img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
       </a>
+	  			<br /><br />
 			<div id="license">This page is available under the GNU Affero General Public License v3.0.</div>
   <!--<script type="module" src="footer.js"></script>-->
  </footer>
