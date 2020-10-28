@@ -3,15 +3,101 @@ $edgeposition: 10%;
 $contentBorder: 1px solid grey;
 $ColumnHeight: 100%;
 $ColumnPadding: 1%;
+$alignLeft: left;
+$alignCenter: center;
+$alignRight: right;
+$textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks: Verdana;
+$textFontSummaryContent: Arial;
+$textFontDatesLicenses: Tahoma;
+$textColorTitleHighlightedlinksContentTitlesNetworkinglinksLatestpostsAdjacentposts: #000000;
+$textColorHeaders: #262626;
+$textColorSummaryContent: #4C4C4C;
+$textColorUnhighlightedlinksDatesLicenses: #737373;
 
+a {
+	text-decoration-line: none;
+	color: $textColorUnhighlightedlinksDatesLicenses;
+}
+
+a:hover{
+	color:$textColorTitleHighlightedlinksContentTitlesNetworkinglinksLatestpostsAdjacentposts;
+}
+
+#dates {
+	color: $textColorUnhighlightedlinksDatesLicenses;
+	font-family: $textFontDatesLicenses;
+}
+
+#summaryContent {
+	color: $textColorSummaryContent;
+	font-family: $textFontSummaryContent;
+}
+
+#links {
+	font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+}
+
+header {
+	border-top-style: none;
+	border-left-style: none;
+	border-bottom-style: solid;
+	border-right-style: none;
+	#maintitle {
+		font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+		text-align: $alignLeft;
+		float: left;
+		a {
+			color: $textColorTitleHighlightedlinksContentTitlesNetworkinglinksLatestpostsAdjacentposts;
+		}
+	}
+	#networking {
+		float: right;
+		#networkinglinkstitle {
+			font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+			text-align: $alignRight;
+		}
+		#networkinglinks {
+			text-align: $alignRight;
+		}
+	}
+}
+
+main {
+	#columnLeft {
+	}
+	#columnCenter {
+	}
+	#ColumnRight {
+	}
+}
+
+footer{
+	nav {
+		text-align: $alignCenter;
+		a {
+			color: $textColorUnhighlightedlinksDatesLicenses;
+			font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+		}
+	}
+	#networkinglinks {
+		text-align: $alignCenter;
+	}
+	#license {
+		text-align: $alignCenter;
+		font-family: $textFontDatesLicenses;
+		color: $textColorUnhighlightedlinksDatesLicenses;
+	}
+}
+
+
+/*
 body {
  padding: $edgeposition;
  height: 80%;
  width: 80%;
 }
 
-header {
-}
+
 
 main {
  height: 100%;
@@ -114,3 +200,4 @@ iframe {
   padding-left: $ColumnPadding;
  }
 }
+*/

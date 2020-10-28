@@ -1,92 +1,177 @@
+a {
+  text-decoration-line: none;
+  color: #737373;
+}
+
+a:hover {
+  color: #000000;
+}
+
+#dates {
+  color: #737373;
+  font-family: Tahoma;
+}
+
+#summaryContent {
+  color: #4C4C4C;
+  font-family: Arial;
+}
+
+#links {
+  font-family: Verdana;
+}
+
+header {
+  border-top-style: none;
+  border-left-style: none;
+  border-bottom-style: solid;
+  border-right-style: none;
+}
+header #maintitle {
+  font-family: Verdana;
+  text-align: left;
+  float: left;
+}
+header #maintitle a {
+  color: #000000;
+}
+header #networking {
+  float: right;
+}
+header #networking #networkinglinkstitle {
+  font-family: Verdana;
+  text-align: right;
+}
+header #networking #networkinglinks {
+  text-align: right;
+}
+
+footer nav {
+  text-align: center;
+}
+footer nav a {
+  color: #737373;
+  font-family: Verdana;
+}
+footer #networkinglinks {
+  text-align: center;
+}
+footer #license {
+  text-align: center;
+  font-family: Tahoma;
+  color: #737373;
+}
+
+/*
 body {
-  padding: 10%;
-  height: 80%;
-  width: 80%; }
+ padding: $edgeposition;
+ height: 80%;
+ width: 80%;
+}
+
+
 
 main {
-  height: 100%; }
+ height: 100%;
+}
 
 footer {
-  text-align: center;
-  position: relative;
-  width: 80%;
-  bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px; }
+ text-align: $text-align;
+ position: relative;
+ width: 80%;
+ bottom: 0;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 10px;
+}
 
 h1 {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 5px solid black;
-  font-size: 26px; }
+ border-top: none;
+ border-left: none;
+ border-right:none;
+ border-bottom: 5px solid black;
+ font-size: 26px;
+}
 
 h2 {
-  margin: auto; }
+ margin: auto;
+}
 
 h3 {
-  margin: auto; }
+ margin: auto;
+}
 
 h4 {
-  margin: auto; }
+ margin: auto;
+}
 
 h6 {
-  color: grey; }
+ color: grey;
+}
 
 span {
-  color: black; }
+ color: black;
+}
 
 .BlogTitle {
-  text-decoration: none; }
+ text-decoration: none;
+}
 
 iframe {
-  align: left;
-  width: 100%;
-  height: 100%;
-  border: none; }
+ align: left;
+ width: 100%;
+ height: 100%;
+ border: none;
+}
 
 .PageHeaderSearch {
-  float: right;
-  font-size: 13px; }
+ float: right;
+ font-size: 13px;
+}
 
 .BottomLinks {
-  text-align: center; }
+ text-align: $text-align;
+}
 
 #TextIndent {
-  text-indent: 10px; }
+ text-indent: 10px;
+}
 
-#Container #ColumnLeft {
+#Container {
+ #ColumnLeft {
   float: left;
   width: 20%;
-  height: 100%;
-  padding-right: 1%; }
-#Container #ColumnCenterHome {
+  height: $ColumnHeight;
+  padding-right: $ColumnPadding;
+ }
+
+ #ColumnCenterHome {
   display: inline-block;
-  border-right: 1px solid grey;
-  border-left: 1px solid grey;
+  border-right: $contentBorder;
+  border-left: $contentBorder;
   width: 55%;
-  height: 100%;
+  height: $ColumnHeight;
   margin: auto;
-  padding-left: 1%;
-  padding-right: 1%; }
-#Container #ColumnCenterOther {
+  padding-left: $ColumnPadding;
+  padding-right: $ColumnPadding;
+ }
+
+ #ColumnCenterOther {
   display: inline-block;
-  border-left: 1px solid grey;
+  border-left: $contentBorder;
   width: 76%;
-  height: 100%;
-  padding-left: 1%;
-  padding-right: 1%; }
-#Container #ColumnRight {
+  height: $ColumnHeight;
+  padding-left: $ColumnPadding;
+  padding-right: $ColumnPadding;
+ }
+
+ #ColumnRight {
   float: right;
   width: 20%;
-  height: 100%;
-  padding-left: 1%; }
-#Container #Paragraph {
-  width: 36em;
-  margin: 0 left;
-  max-width: 100%;
-  line-height: 1.5;
-  font-size: 18px; }
+  height: $ColumnHeight;
+  padding-left: $ColumnPadding;
+ }
+}
+*/
 
 /*# sourceMappingURL=styles.css.map */
