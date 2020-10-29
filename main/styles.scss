@@ -9,10 +9,12 @@ $alignRight: right;
 $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks: Verdana;
 $textFontSummaryContent: Arial;
 $textFontDatesLicenses: Tahoma;
-$textColorTitleHighlightedlinksContentTitlesNetworkinglinksLatestpostsAdjacentposts: #000000;
-$textColorHeaders: #262626;
+$textColorTitleHighlightedlinksNetworkinglinksLatestpostsAdjacentposts: #000000;
+$textColorContenttitlesHeaders: #262626;
 $textColorSummaryContent: #4C4C4C;
 $textColorUnhighlightedlinksDatesLicenses: #737373;
+$countCharCenter: 79ch;
+$countCharLeft: 19ch;
 
 a {
 	text-decoration-line: none;
@@ -20,7 +22,7 @@ a {
 }
 
 a:hover{
-	color:$textColorTitleHighlightedlinksContentTitlesNetworkinglinksLatestpostsAdjacentposts;
+	color: $textColorTitleHighlightedlinksNetworkinglinksLatestpostsAdjacentposts;
 }
 
 #dates {
@@ -37,58 +39,127 @@ a:hover{
 	font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
 }
 
-header {
-	border-top-style: none;
-	border-left-style: none;
-	border-bottom-style: solid;
-	border-right-style: none;
-	#maintitle {
-		font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
-		text-align: $alignLeft;
-		float: left;
-		a {
-			color: $textColorTitleHighlightedlinksContentTitlesNetworkinglinksLatestpostsAdjacentposts;
-		}
-	}
-	#networking {
-		float: right;
-		#networkinglinkstitle {
+body {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	
+	header {
+		border-top-style: none;
+		border-left-style: none;
+		border-bottom-style: solid;
+		border-right-style: none;
+		
+		#maintitle {
 			font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
-			text-align: $alignRight;
+			//text-align: $alignLeft;
+			//float: left;
+			//margin-right: auto;
+			display: block;
+			float: left;
+			h1 {
+				margin-bottom: 0;
+				padding-bottom: 0;
+				a {
+					color: $textColorTitleHighlightedlinksNetworkinglinksLatestpostsAdjacentposts;
+				}
+			}
+
+		}
+		//#networking {
+			//margin-right: 0;
+			//display: inline-block;
+			//float: right;
+		#networkinglinkstitle {
+			display: inline-block;
+			//text-align: right;
+			font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+				h3 {
+				margin-bottom: 0;
+				padding-bottom: 0;
+				}
+				//text-align: $alignRight;
+				//display:inline-block;
 		}
 		#networkinglinks {
-			text-align: $alignRight;
+				display: block;
+				float: right;
+				display: inline-block;
+				//margin-left: auto;
+				//margin-right: 0;
+				//text-align: $alignRight;
+					a {
+					margin-left: auto;
+					margin-right: 0;
+					}
+					img {
+						padding-left: 1%;
+					}
+		}
+		//}
+		
+
+	}
+
+	main {
+		//height: 
+		#columnLeft {
+			max-width: $countCharLeft;
+			width: 20%;
+			display: inline-block;
+			margin-right: auto;
+		}
+		#columnCenter {
+			max-width: $countCharCenter;
+			width: 40%;
+			border-left-style: solid;
+			//display: inline-block;
+			// Center the center column
+			margin-left: auto;
+			margin-right: auto;
+			//display: flex;
+			//justify-content: center;
+			#contentTitle {
+				h2 {
+					margin-bottom: 0;
+					padding-bottom: 0;
+				}
+				a {
+					font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+					color: $textColorContenttitlesHeaders;
+				}
+				a:hover {
+					color: $textColorTitleHighlightedlinksNetworkinglinksLatestpostsAdjacentposts;
+				}
+			}		
+		}
+		#ColumnRight {
+			width: 20%;
+			display: inline-block;
+			margin-right: 0;
+			border-left-style: solid;
 		}
 	}
-}
 
-main {
-	#columnLeft {
-	}
-	#columnCenter {
-	}
-	#ColumnRight {
-	}
-}
-
-footer{
-	nav {
-		text-align: $alignCenter;
-		a {
+	footer{
+		nav {
+			text-align: $alignCenter;
+			a {
+				color: $textColorUnhighlightedlinksDatesLicenses;
+				font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+			}
+		}
+		#networkinglinks {
+			text-align: $alignCenter;
+		}
+		#license {
+			text-align: $alignCenter;
+			font-family: $textFontDatesLicenses;
 			color: $textColorUnhighlightedlinksDatesLicenses;
-			font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
 		}
 	}
-	#networkinglinks {
-		text-align: $alignCenter;
-	}
-	#license {
-		text-align: $alignCenter;
-		font-family: $textFontDatesLicenses;
-		color: $textColorUnhighlightedlinksDatesLicenses;
-	}
 }
-
 
 /*
 body {

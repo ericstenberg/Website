@@ -13,7 +13,7 @@
 	<body>
 		<header>
 			<div id="maintitle"><h1><a href="http://localhost/repo/main/index.html">Encoding/Decoding</a></h1></div>
-			<div id="networking">
+			<!--<div id="networking">-->
 				<div id="networkinglinkstitle"><h3>Networking Links</h3></div>
 				<div id="networkinglinks">
 					<a href="https://github.com/ericstenberg">
@@ -31,73 +31,74 @@
 						<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
 					</a>
 				</div>
-			</div>
+			<!--</div>-->
 		</header>
 		<main>
-			 <div id="Container">
-				<div id="ColumnCenter"></div>
-					<div id="contentData"></div>
-			 		<script>
+			<div id="columnLeft">
+				<h3><div id="latestposts">Latest Posts</div></h3>
+				<div id="latestPostsData">
+					<script>
 						(function() {
-							var content = "http://localhost/repo/main/data/contentpages.json";
-							$.getJSON( content, {
-								tags: "pages",
-								tagmode: "any",
-								format: "json"
-							})
-							.done(function( data ) {
-								$.each(data.pages.reverse(), function( i, item ) {
-									$("#contentData").append(
-										"<h2><div id=contentTitle><a href="
-										+ item.url + ">"
-										+ item.contentTitle
-										+ "</a></div></h2><br>"
-										+ "<div id=dates>"
-										+ "Published: "
-										+ item.publishMonth + " "
-										+ item.publishDay + ", "
-										+ item.publishYear + "<br />"
-										+ "Updated: "
-										+ item.updateMonth + " "
-										+ item.updateDay + ", "
-										+ item.updateYear
-										+ "</div>"
-										+ "<div id=summaryContent>"
-										+ item.summary
-										+ "</div><br />")
-								});
-							  });
-							})();
-					</script>
-		<h3><div id="latestposts">Latest Posts</div></h3>
-		<div id="ColumnLeft"></div>
-			<script>
-				(function() {
-					var content = "http://localhost/repo/main/data/contentpages.json";
-					$.getJSON( content, {
+						var content = "http://localhost/repo/main/data/contentpages.json";
+						$.getJSON( content, {
 						tags: "pages",
 						tagmode: "any",
 						format: "json"
-					})
-					.done(function( data ) {
+						})
+						.done(function( data ) {
 						$.each( data.pages.reverse(), function( i, item ) {
-							$("#ColumnLeft").append(
-								"<div id=dates>"
-								+ item.publishMonth + " " + item.publishDay
-								+ ", " + item.publishYear
-								+ "</div><div id=links>"
-								+ "<a href=" + item.url + ">" + item.contentTitle
-								+ "</a></div><br /><br />");
-							if(i > 8){
-								return false;
-							}
+						$("#latestPostsData").append(
+						"<div id=dates>"
+						+ item.publishMonth + " " + item.publishDay
+						+ ", " + item.publishYear
+						+ "</div><div id=links>"
+						+ "<a href=" + item.url + ">" + item.contentTitle
+						+ "</a></div><br /><br />");
+						if(i > 8){
+						return false;
+						}
 						});
-					  });
+						});
+						})();
+					</script>
+				</div>
+				<div id="columnCenter">
+				<div id="contentData"></div>
+				<script>
+					(function() {
+						var content = "http://localhost/repo/main/data/contentpages.json";
+						$.getJSON( content, {
+							tags: "pages",
+							tagmode: "any",
+							format: "json"
+						})
+						.done(function( data ) {
+							$.each(data.pages.reverse(), function( i, item ) {
+							$("#contentData").append(
+							"<div id=contentTitle><h2><a href="
+							+ item.url + ">"
+							+ item.contentTitle
+							+ "</a></h2></div>"
+							+ "<div id=dates>"
+							+ "Published: "
+							+ item.publishMonth + " "
+							+ item.publishDay + ", "
+							+ item.publishYear + "<br />"
+							+ "Updated: "
+							+ item.updateMonth + " "
+							+ item.updateDay + ", "
+							+ item.updateYear
+							+ "</div>"
+							+ "<div id=summaryContent>"
+							+ item.summary
+							+ "</div>")
+							});
+						});
 					})();
-			</script>
-		<div id="ColumnRight"></div>
-		</div>
-	</main>
+				</script>
+				</div>
+				<div id="columnRight"></div>
+			</main>
 		<footer>
 			<nav>
 			<!--<button type="button" onclick="window.location.href='page2.html'">Next Page</button>
