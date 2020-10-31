@@ -1,0 +1,172 @@
+					<!--<a href="https://twitter.com/ericstenberg0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ericstenberg0</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					-->  
+					
+								//text-align: $alignLeft;
+			//float: left;
+			//margin-right: auto;
+			//display: block;
+			//float: left;
+			
+						//margin-right: 0;
+			//display: inline-block;
+			//float: right;
+							//display: inline-block;
+				//text-align: right;
+									//text-align: $alignRight;
+					//display:inline-block;
+					
+					
+										//display: block;
+					//float: right;
+					//display: inline-block;
+					//text-align: right;
+					//margin-left: auto;
+					//margin-right: 0;
+					//text-align: $alignRight;
+					
+					
+										//margin-left: auto;
+					//margin-right: 0;
+					
+							text-align: $alignLeft;
+							
+							/*
+body {
+ padding: $edgeposition;
+ height: 80%;
+ width: 80%;
+}
+
+
+
+main {
+ height: 100%;
+}
+
+footer {
+ text-align: $text-align;
+ position: relative;
+ width: 80%;
+ bottom: 0;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 10px;
+}
+
+h1 {
+ border-top: none;
+ border-left: none;
+ border-right:none;
+ border-bottom: 5px solid black;
+ font-size: 26px;
+}
+
+h2 {
+ margin: auto;
+}
+
+h3 {
+ margin: auto;
+}
+
+h4 {
+ margin: auto;
+}
+
+h6 {
+ color: grey;
+}
+
+span {
+ color: black;
+}
+
+.BlogTitle {
+ text-decoration: none;
+}
+
+iframe {
+ align: left;
+ width: 100%;
+ height: 100%;
+ border: none;
+}
+
+.PageHeaderSearch {
+ float: right;
+ font-size: 13px;
+}
+
+.BottomLinks {
+ text-align: $text-align;
+}
+
+#TextIndent {
+ text-indent: 10px;
+}
+
+#Container {
+ #ColumnLeft {
+  float: left;
+  width: 20%;
+  height: $ColumnHeight;
+  padding-right: $ColumnPadding;
+ }
+
+ #ColumnCenterHome {
+  display: inline-block;
+  border-right: $contentBorder;
+  border-left: $contentBorder;
+  width: 55%;
+  height: $ColumnHeight;
+  margin: auto;
+  padding-left: $ColumnPadding;
+  padding-right: $ColumnPadding;
+ }
+
+ #ColumnCenterOther {
+  display: inline-block;
+  border-left: $contentBorder;
+  width: 76%;
+  height: $ColumnHeight;
+  padding-left: $ColumnPadding;
+  padding-right: $ColumnPadding;
+ }
+
+ #ColumnRight {
+  float: right;
+  width: 20%;
+  height: $ColumnHeight;
+  padding-left: $ColumnPadding;
+ }
+}
+*/
+
+			//display: inline-block;
+			// Center the center column
+			//margin-left: auto;
+			//margin-right: auto;
+			//display: flex;
+			//justify-content: center;
+			
+						<!--<button type="button" onclick="window.location.href='page2.html'">Next Page</button>
+			<br /><br />-->
+			
+			
+				<!--<a href="disclaimerandprivacypolicy.html">Disclaimer / Privacy Policy</a>-->
+				
+								<!--<a href="https://twitter.com/ericstenberg0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ericstenberg0</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				--> 
+				
+							<!--<script type="module" src="footer.js"></script>-->
+							
+										//vertical-align: bottom;
+										
+														display: flex;
+														
+		
+		//#networkinglinkstitle, #networkinglinks {
+			//display: flex;
+			//vertical-align: bottom;
+			//horizontal-align: right;
+		//}

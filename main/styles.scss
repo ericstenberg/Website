@@ -46,80 +46,66 @@ body {
 	padding-bottom: 5%;
 	
 	header {
+		height: 20%;
 		border-top-style: none;
 		border-left-style: none;
 		border-bottom-style: solid;
 		border-right-style: none;
 		
+		#maintitle, #networking {
+			display: inline-block;
+		}
+		
 		#maintitle {
-			font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
-			//text-align: $alignLeft;
-			//float: left;
-			//margin-right: auto;
-			display: block;
-			float: left;
+			text-align: left;
+			width: 49%;
 			h1 {
 				margin-bottom: 0;
 				padding-bottom: 0;
-				a {
-					color: $textColorTitleHighlightedlinksNetworkinglinksLatestpostsAdjacentposts;
-				}
+				font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
 			}
-
+			a {
+					color: $textColorTitleHighlightedlinksNetworkinglinksLatestpostsAdjacentposts;
+			}
 		}
-		//#networking {
-			//margin-right: 0;
-			//display: inline-block;
-			//float: right;
-		#networkinglinkstitle {
-			display: inline-block;
-			//text-align: right;
-			font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+		#networking {
+			//justify-self: left;
+			text-align:right;
+			width: 50%;
 				h3 {
-				margin-bottom: 0;
-				padding-bottom: 0;
+					font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+					margin-bottom: 0;
+					padding-bottom: 0;
+					display: inline;
 				}
-				//text-align: $alignRight;
-				//display:inline-block;
-		}
-		#networkinglinks {
-				display: block;
-				float: right;
-				display: inline-block;
-				//margin-left: auto;
-				//margin-right: 0;
-				//text-align: $alignRight;
-					a {
-					margin-left: auto;
-					margin-right: 0;
-					}
+			#networkinglinks {
+				display: inline;
+				a {
 					img {
 						padding-left: 1%;
 					}
+				}
+			}
 		}
-		//}
 		
-
 	}
-
 	main {
-		//height: 
+		display: block;
+		#columnLeft, #columnCenter, #columnRight {
+			display: inline-block;
+			height: 60%; 
+		}
+		
 		#columnLeft {
 			max-width: $countCharLeft;
-			width: 20%;
-			display: inline-block;
-			margin-right: auto;
+			width: 30%;
+			//display: inline-block;
+			//margin-right: auto;
 		}
 		#columnCenter {
 			max-width: $countCharCenter;
-			width: 40%;
+			width: 50%;
 			border-left-style: solid;
-			//display: inline-block;
-			// Center the center column
-			margin-left: auto;
-			margin-right: auto;
-			//display: flex;
-			//justify-content: center;
 			#contentTitle {
 				h2 {
 					margin-bottom: 0;
@@ -135,14 +121,15 @@ body {
 			}		
 		}
 		#ColumnRight {
-			width: 20%;
-			display: inline-block;
-			margin-right: 0;
+			width: 10%;
+			//display: inline-block;
+			//margin-right: 0;
 			border-left-style: solid;
 		}
 	}
 
 	footer{
+		display: block;
 		nav {
 			text-align: $alignCenter;
 			a {
@@ -160,115 +147,3 @@ body {
 		}
 	}
 }
-
-/*
-body {
- padding: $edgeposition;
- height: 80%;
- width: 80%;
-}
-
-
-
-main {
- height: 100%;
-}
-
-footer {
- text-align: $text-align;
- position: relative;
- width: 80%;
- bottom: 0;
- margin-left: auto;
- margin-right: auto;
- margin-top: 10px;
-}
-
-h1 {
- border-top: none;
- border-left: none;
- border-right:none;
- border-bottom: 5px solid black;
- font-size: 26px;
-}
-
-h2 {
- margin: auto;
-}
-
-h3 {
- margin: auto;
-}
-
-h4 {
- margin: auto;
-}
-
-h6 {
- color: grey;
-}
-
-span {
- color: black;
-}
-
-.BlogTitle {
- text-decoration: none;
-}
-
-iframe {
- align: left;
- width: 100%;
- height: 100%;
- border: none;
-}
-
-.PageHeaderSearch {
- float: right;
- font-size: 13px;
-}
-
-.BottomLinks {
- text-align: $text-align;
-}
-
-#TextIndent {
- text-indent: 10px;
-}
-
-#Container {
- #ColumnLeft {
-  float: left;
-  width: 20%;
-  height: $ColumnHeight;
-  padding-right: $ColumnPadding;
- }
-
- #ColumnCenterHome {
-  display: inline-block;
-  border-right: $contentBorder;
-  border-left: $contentBorder;
-  width: 55%;
-  height: $ColumnHeight;
-  margin: auto;
-  padding-left: $ColumnPadding;
-  padding-right: $ColumnPadding;
- }
-
- #ColumnCenterOther {
-  display: inline-block;
-  border-left: $contentBorder;
-  width: 76%;
-  height: $ColumnHeight;
-  padding-left: $ColumnPadding;
-  padding-right: $ColumnPadding;
- }
-
- #ColumnRight {
-  float: right;
-  width: 20%;
-  height: $ColumnHeight;
-  padding-left: $ColumnPadding;
- }
-}
-*/

@@ -28,55 +28,58 @@ body {
   padding-bottom: 5%;
 }
 body header {
+  height: 20%;
   border-top-style: none;
   border-left-style: none;
   border-bottom-style: solid;
   border-right-style: none;
 }
+body header #maintitle, body header #networking {
+  display: inline-block;
+}
 body header #maintitle {
-  font-family: Verdana;
-  display: block;
-  float: left;
+  text-align: left;
+  width: 49%;
 }
 body header #maintitle h1 {
   margin-bottom: 0;
   padding-bottom: 0;
-}
-body header #maintitle h1 a {
-  color: #000000;
-}
-body header #networkinglinkstitle {
-  display: inline-block;
   font-family: Verdana;
 }
-body header #networkinglinkstitle h3 {
+body header #maintitle a {
+  color: #000000;
+}
+body header #networking {
+  text-align: right;
+  width: 50%;
+}
+body header #networking h3 {
+  font-family: Verdana;
   margin-bottom: 0;
   padding-bottom: 0;
+  display: inline;
 }
-body header #networkinglinks {
-  display: block;
-  float: right;
-  display: inline-block;
+body header #networking #networkinglinks {
+  display: inline;
 }
-body header #networkinglinks a {
-  margin-left: auto;
-  margin-right: 0;
-}
-body header #networkinglinks img {
+body header #networking #networkinglinks a img {
   padding-left: 1%;
+}
+body main {
+  display: block;
+}
+body main #columnLeft, body main #columnCenter, body main #columnRight {
+  display: inline-block;
+  height: 60%;
 }
 body main #columnLeft {
   max-width: 19ch;
-  width: 20%;
-  display: inline-block;
-  margin-right: auto;
+  width: 30%;
 }
 body main #columnCenter {
   max-width: 79ch;
-  width: 40%;
+  width: 50%;
   border-left-style: solid;
-  margin-left: auto;
-  margin-right: auto;
 }
 body main #columnCenter #contentTitle h2 {
   margin-bottom: 0;
@@ -90,10 +93,11 @@ body main #columnCenter #contentTitle a:hover {
   color: #000000;
 }
 body main #ColumnRight {
-  width: 20%;
-  display: inline-block;
-  margin-right: 0;
+  width: 10%;
   border-left-style: solid;
+}
+body footer {
+  display: block;
 }
 body footer nav {
   text-align: center;
@@ -110,117 +114,5 @@ body footer #license {
   font-family: Tahoma;
   color: #737373;
 }
-
-/*
-body {
- padding: $edgeposition;
- height: 80%;
- width: 80%;
-}
-
-
-
-main {
- height: 100%;
-}
-
-footer {
- text-align: $text-align;
- position: relative;
- width: 80%;
- bottom: 0;
- margin-left: auto;
- margin-right: auto;
- margin-top: 10px;
-}
-
-h1 {
- border-top: none;
- border-left: none;
- border-right:none;
- border-bottom: 5px solid black;
- font-size: 26px;
-}
-
-h2 {
- margin: auto;
-}
-
-h3 {
- margin: auto;
-}
-
-h4 {
- margin: auto;
-}
-
-h6 {
- color: grey;
-}
-
-span {
- color: black;
-}
-
-.BlogTitle {
- text-decoration: none;
-}
-
-iframe {
- align: left;
- width: 100%;
- height: 100%;
- border: none;
-}
-
-.PageHeaderSearch {
- float: right;
- font-size: 13px;
-}
-
-.BottomLinks {
- text-align: $text-align;
-}
-
-#TextIndent {
- text-indent: 10px;
-}
-
-#Container {
- #ColumnLeft {
-  float: left;
-  width: 20%;
-  height: $ColumnHeight;
-  padding-right: $ColumnPadding;
- }
-
- #ColumnCenterHome {
-  display: inline-block;
-  border-right: $contentBorder;
-  border-left: $contentBorder;
-  width: 55%;
-  height: $ColumnHeight;
-  margin: auto;
-  padding-left: $ColumnPadding;
-  padding-right: $ColumnPadding;
- }
-
- #ColumnCenterOther {
-  display: inline-block;
-  border-left: $contentBorder;
-  width: 76%;
-  height: $ColumnHeight;
-  padding-left: $ColumnPadding;
-  padding-right: $ColumnPadding;
- }
-
- #ColumnRight {
-  float: right;
-  width: 20%;
-  height: $ColumnHeight;
-  padding-left: $ColumnPadding;
- }
-}
-*/
 
 /*# sourceMappingURL=styles.css.map */

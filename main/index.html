@@ -12,57 +12,60 @@
 	</head>
 	<body>
 		<header>
-			<div id="maintitle"><h1><a href="http://localhost/repo/main/index.html">Encoding/Decoding</a></h1></div>
-			<!--<div id="networking">-->
-				<div id="networkinglinkstitle"><h3>Networking Links</h3></div>
-				<div id="networkinglinks">
-					<a href="https://github.com/ericstenberg">
-						<img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
-					</a>
-					<a href="https://stackoverflow.com/users/10241858/ericstenberg">
-						<img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
-					</a>
-					<!--<a href="https://twitter.com/ericstenberg0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ericstenberg0</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-					-->  
-					<a href="https://twitter.com/ericstenberg0">
-						<img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
-					</a>
-					<a href="https://www.linkedin.com/in/ericdstenberg">
-						<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
-					</a>
-				</div>
-			<!--</div>-->
+			<div id="maintitle">
+				<a href="http://localhost/repo/main/index.html"><h1>Encoding/Decoding</h1></a>
+			</div>
+			<div id="networking">
+				<h3>Networking Links</h3>
+			<div id="networkinglinks">
+				<a href="https://github.com/ericstenberg">
+					<img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
+				</a>
+				<a href="https://stackoverflow.com/users/10241858/ericstenberg">
+					<img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
+				</a>
+				<a href="https://twitter.com/ericstenberg0">
+					<img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
+				</a>
+				<a href="https://www.linkedin.com/in/ericdstenberg">
+					<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
+				</a>
+			</div>
+			</div>
 		</header>
 		<main>
 			<div id="columnLeft">
-				<h3><div id="latestposts">Latest Posts</div></h3>
+				<h3>
+					<div id="latestposts">Latest Posts</div>
+				</h3>
 				<div id="latestPostsData">
-					<script>
-						(function() {
-						var content = "http://localhost/repo/main/data/contentpages.json";
-						$.getJSON( content, {
-						tags: "pages",
-						tagmode: "any",
-						format: "json"
-						})
-						.done(function( data ) {
-						$.each( data.pages.reverse(), function( i, item ) {
-						$("#latestPostsData").append(
-						"<div id=dates>"
-						+ item.publishMonth + " " + item.publishDay
-						+ ", " + item.publishYear
-						+ "</div><div id=links>"
-						+ "<a href=" + item.url + ">" + item.contentTitle
-						+ "</a></div><br /><br />");
-						if(i > 8){
-						return false;
-						}
-						});
-						});
-						})();
-					</script>
+				<script>
+					(function() {
+					var content = "http://localhost/repo/main/data/contentpages.json";
+					$.getJSON( content, {
+					tags: "pages",
+					tagmode: "any",
+					format: "json"
+					})
+					.done(function( data ) {
+					$.each( data.pages.reverse(), function( i, item ) {
+					$("#latestPostsData").append(
+					"<div id=dates>"
+					+ item.publishMonth + " " + item.publishDay
+					+ ", " + item.publishYear
+					+ "</div><div id=links>"
+					+ "<a href=" + item.url + ">" + item.contentTitle
+					+ "</a></div><br /><br />");
+					if(i > 8){
+					return false;
+					}
+					});
+					});
+					})();
+				</script>
 				</div>
-				<div id="columnCenter">
+			</div>
+			<div id="columnCenter">
 				<div id="contentData"></div>
 				<script>
 					(function() {
@@ -96,38 +99,32 @@
 						});
 					})();
 				</script>
-				</div>
-				<div id="columnRight"></div>
+			</div>
+			<div id="columnRight"></div>
 			</main>
-		<footer>
+		<!--<footer>
 			<nav>
-			<!--<button type="button" onclick="window.location.href='page2.html'">Next Page</button>
-			<br /><br />-->
 				<a href="http://localhost/repo/main/index.html">Home</a>
-				<!--<a href="disclaimerandprivacypolicy.html">Disclaimer / Privacy Policy</a>-->
 				<a href="https://github.com/ericstenberg/encodingdecoding/blob/master/LICENSE">License</a>
 				<br /><br />
 			</nav>
 			<div id="networkinglinks">
 				<a href="https://github.com/ericstenberg">
-				<img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
+					<img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
 				</a>
 				<a href="https://stackoverflow.com/users/10241858/ericstenberg">
-				<img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
+					<img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
 				</a>
-				<!--<a href="https://twitter.com/ericstenberg0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ericstenberg0</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-				-->  
 				<a href="https://twitter.com/ericstenberg0">
-				<img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
+					<img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
 				</a>
 				<a href="https://www.linkedin.com/in/ericdstenberg">
-				<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
+					<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
 				</a>
 				<br /><br />
 			</div>
-			<div id="license">This page is available under the GNU Affero General Public License v3.0.</div>
-		<!--<script type="module" src="footer.js"></script>-->
-		</footer>
+			<div id="license">This page is available under the GNU Affero General Public License v3.0</div>
+		</footer>-->
 	</body>
 </html>
 <!--https://www.w3schools.com/TAGs/tryit.asp?filename=tryhtml_link_image-->
