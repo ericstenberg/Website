@@ -28,7 +28,6 @@ body {
   padding-bottom: 5%;
 }
 body header {
-  height: 20%;
   border-top-style: none;
   border-left-style: none;
   border-bottom-style: solid;
@@ -65,21 +64,29 @@ body header #networking #networkinglinks {
 body header #networking #networkinglinks a img {
   padding-left: 1%;
 }
-body main {
-  display: block;
-}
 body main #columnLeft, body main #columnCenter, body main #columnRight {
   display: inline-block;
-  height: 60%;
 }
 body main #columnLeft {
+  height: 100%;
+  width: 15%;
+  min-width: 19ch;
+}
+body main #columnLeft #dates {
   max-width: 19ch;
-  width: 30%;
+}
+body main #columnLeft #links {
+  max-width: 19ch;
 }
 body main #columnCenter {
-  max-width: 79ch;
-  width: 50%;
+  padding-left: 1%;
+  width: 69%;
+  min-width: 79ch;
   border-left-style: solid;
+  border-right-style: solid;
+}
+body main #columnCenter #contentTitle {
+  max-width: 79ch;
 }
 body main #columnCenter #contentTitle h2 {
   margin-bottom: 0;
@@ -92,12 +99,16 @@ body main #columnCenter #contentTitle a {
 body main #columnCenter #contentTitle a:hover {
   color: #000000;
 }
-body main #ColumnRight {
-  width: 10%;
-  border-left-style: solid;
+body main #columnCenter #dates {
+  max-width: 79ch;
 }
-body footer {
-  display: block;
+body main #columnCenter #summaryContent {
+  max-width: 79ch;
+}
+body main #columnRight {
+  height: 100%;
+  width: 15%;
+  min-width: 19ch;
 }
 body footer nav {
   text-align: center;

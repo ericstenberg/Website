@@ -46,7 +46,7 @@ body {
 	padding-bottom: 5%;
 	
 	header {
-		height: 20%;
+		//height: 20%;
 		border-top-style: none;
 		border-left-style: none;
 		border-bottom-style: solid;
@@ -69,7 +69,6 @@ body {
 			}
 		}
 		#networking {
-			//justify-self: left;
 			text-align:right;
 			width: 50%;
 				h3 {
@@ -87,26 +86,32 @@ body {
 				}
 			}
 		}
-		
-	}
+	} // Header is good to go!
 	main {
-		display: block;
 		#columnLeft, #columnCenter, #columnRight {
 			display: inline-block;
-			height: 60%; 
 		}
-		
 		#columnLeft {
-			max-width: $countCharLeft;
-			width: 30%;
-			//display: inline-block;
-			//margin-right: auto;
+			//display:inline;
+			height: 100%;
+			//margin-top: auto;
+			width: 15%;
+			min-width: $countCharLeft;
+			#dates {
+				max-width: $countCharLeft;
+			}
+			#links {
+				max-width: $countCharLeft;
+			}
 		}
 		#columnCenter {
-			max-width: $countCharCenter;
-			width: 50%;
+			padding-left: 1%;
+			width: 69%;
+			min-width: $countCharCenter;
 			border-left-style: solid;
+			border-right-style: solid;
 			#contentTitle {
+				max-width: $countCharCenter;
 				h2 {
 					margin-bottom: 0;
 					padding-bottom: 0;
@@ -118,18 +123,24 @@ body {
 				a:hover {
 					color: $textColorTitleHighlightedlinksNetworkinglinksLatestpostsAdjacentposts;
 				}
-			}		
+			}
+			#dates {
+				max-width: $countCharCenter;
+			}
+			#summaryContent {
+				max-width: $countCharCenter;
+			}	
 		}
-		#ColumnRight {
-			width: 10%;
-			//display: inline-block;
-			//margin-right: 0;
-			border-left-style: solid;
+		#columnRight {
+			height: 100%;
+			width: 15%;
+			min-width: $countCharLeft;
+			// make columnRight disappear if zoomed in.
 		}
 	}
 
 	footer{
-		display: block;
+		//display: block;
 		nav {
 			text-align: $alignCenter;
 			a {
