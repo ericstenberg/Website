@@ -39,6 +39,16 @@ a:hover{
 	font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
 }
 
+html {
+	//height: 100%;
+	width: 100%;
+	//margin: 0;
+	/*padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;*/
+}
+
 body {
 	padding-left: 10%;
 	padding-right: 10%;
@@ -46,19 +56,22 @@ body {
 	padding-bottom: 5%;
 	
 	header {
-		//height: 20%;
+		box-sizing: border-box;
+		display: block;
+		//height: 10%;
+		//width: 90%;
 		border-top-style: none;
 		border-left-style: none;
 		border-bottom-style: solid;
 		border-right-style: none;
-		
+				
 		#maintitle, #networking {
 			display: inline-block;
 		}
 		
 		#maintitle {
 			text-align: left;
-			width: 49%;
+			width: 50%;
 			h1 {
 				margin-bottom: 0;
 				padding-bottom: 0;
@@ -69,8 +82,8 @@ body {
 			}
 		}
 		#networking {
-			text-align:right;
-			width: 50%;
+			text-align: right;
+			width: 49.5%;
 				h3 {
 					font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
 					margin-bottom: 0;
@@ -88,15 +101,48 @@ body {
 		}
 	} // Header is good to go!
 	main {
+		padding-top: 1%;
+		justify-content: start;
+		align-content: start;
+		//display: block;
+		//position: relative;
+		//height: 100%;
+		
+		/*#columnLeft {
+			display: block;
+			box-sizing: border-box;
+		}*/
+		
 		#columnLeft, #columnCenter, #columnRight {
+			box-sizing: border-box;
 			display: inline-block;
+			//padding-top: 1%;
+			//height: auto;
+			/*position: relative;
+			top: 100em;*/
 		}
+		
 		#columnLeft {
-			//display:inline;
-			height: 100%;
-			//margin-top: auto;
 			width: 15%;
 			min-width: $countCharLeft;
+			//margin: 0em;
+			//padding-bottom: 10%;
+			//margin: 1000em;
+			//box-sizing: content-box;
+			//position: relative;
+			//bottom: 100em;
+			//justify-content: top;
+			//height: 100%;
+			//padding-top: 100%;
+			//margin-top: 100%;
+			//justify-content: top;
+			//position: absolute; absolute overlaps box
+			//display: inline-block;
+			//position: -webkit-sticky;
+			//position: sticky;
+			//position: relative;
+			//top: -10000px;
+			//top: -50%;
 			#dates {
 				max-width: $countCharLeft;
 			}
@@ -105,8 +151,11 @@ body {
 			}
 		}
 		#columnCenter {
+			//box-sizing: content-box;
+			//display: block;
+			//height: 100%;
+			width: 68%;
 			padding-left: 1%;
-			width: 69%;
 			min-width: $countCharCenter;
 			border-left-style: solid;
 			border-right-style: solid;
@@ -132,16 +181,21 @@ body {
 			}	
 		}
 		#columnRight {
-			height: 100%;
+			//box-sizing: content-box;
+			//height: 100%;
 			width: 15%;
 			min-width: $countCharLeft;
+			border-left-style: solid;
 			// make columnRight disappear if zoomed in.
 		}
 	}
 
 	footer{
-		//display: block;
+		//padding-top: 1%
+		//width: 80%;
+		display: block;
 		nav {
+			padding-top: 1%;
 			text-align: $alignCenter;
 			a {
 				color: $textColorUnhighlightedlinksDatesLicenses;

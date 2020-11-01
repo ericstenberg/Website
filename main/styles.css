@@ -21,6 +21,14 @@ a:hover {
   font-family: Verdana;
 }
 
+html {
+  width: 100%;
+  /*padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;*/
+}
+
 body {
   padding-left: 10%;
   padding-right: 10%;
@@ -28,6 +36,8 @@ body {
   padding-bottom: 5%;
 }
 body header {
+  box-sizing: border-box;
+  display: block;
   border-top-style: none;
   border-left-style: none;
   border-bottom-style: solid;
@@ -38,7 +48,7 @@ body header #maintitle, body header #networking {
 }
 body header #maintitle {
   text-align: left;
-  width: 49%;
+  width: 50%;
 }
 body header #maintitle h1 {
   margin-bottom: 0;
@@ -50,7 +60,7 @@ body header #maintitle a {
 }
 body header #networking {
   text-align: right;
-  width: 50%;
+  width: 49.5%;
 }
 body header #networking h3 {
   font-family: Verdana;
@@ -64,11 +74,22 @@ body header #networking #networkinglinks {
 body header #networking #networkinglinks a img {
   padding-left: 1%;
 }
+body main {
+  padding-top: 1%;
+  justify-content: start;
+  align-content: start;
+  /*#columnLeft {
+  	display: block;
+  	box-sizing: border-box;
+  }*/
+}
 body main #columnLeft, body main #columnCenter, body main #columnRight {
+  box-sizing: border-box;
   display: inline-block;
+  /*position: relative;
+  top: 100em;*/
 }
 body main #columnLeft {
-  height: 100%;
   width: 15%;
   min-width: 19ch;
 }
@@ -79,8 +100,8 @@ body main #columnLeft #links {
   max-width: 19ch;
 }
 body main #columnCenter {
+  width: 68%;
   padding-left: 1%;
-  width: 69%;
   min-width: 79ch;
   border-left-style: solid;
   border-right-style: solid;
@@ -106,11 +127,15 @@ body main #columnCenter #summaryContent {
   max-width: 79ch;
 }
 body main #columnRight {
-  height: 100%;
   width: 15%;
   min-width: 19ch;
+  border-left-style: solid;
+}
+body footer {
+  display: block;
 }
 body footer nav {
+  padding-top: 1%;
   text-align: center;
 }
 body footer nav a {
