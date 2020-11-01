@@ -22,7 +22,6 @@ a:hover {
 }
 
 html {
-  width: 100%;
   /*padding-left: 10%;
   padding-right: 10%;
   padding-top: 5%;
@@ -30,120 +29,93 @@ html {
 }
 
 body {
-  padding-left: 10%;
-  padding-right: 10%;
   padding-top: 5%;
   padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-body header {
-  box-sizing: border-box;
-  display: block;
+body #item1 {
   border-top-style: none;
   border-left-style: none;
   border-bottom-style: solid;
   border-right-style: none;
 }
-body header #maintitle, body header #networking {
+body #item1 #maintitle, body #item1 #networking {
   display: inline-block;
 }
-body header #maintitle {
-  text-align: left;
-  width: 50%;
-}
-body header #maintitle h1 {
+body #item1 #maintitle h1 {
   margin-bottom: 0;
   padding-bottom: 0;
   font-family: Verdana;
 }
-body header #maintitle a {
+body #item1 #maintitle a {
   color: #000000;
 }
-body header #networking {
+body #item1 #networking {
   text-align: right;
-  width: 49.5%;
 }
-body header #networking h3 {
+body #item1 #networking h3 {
   font-family: Verdana;
   margin-bottom: 0;
   padding-bottom: 0;
   display: inline;
 }
-body header #networking #networkinglinks {
+body #item1 #networking #networkinglinks {
   display: inline;
 }
-body header #networking #networkinglinks a img {
+body #item1 #networking #networkinglinks a img {
   padding-left: 1%;
 }
-body main {
-  padding-top: 1%;
-  /*#columnLeft {
-  	display: block;
-  	box-sizing: border-box;
-  }*/
-}
-body main #columnLeft, body main #columnCenter, body main #columnRight {
-  box-sizing: border-box;
-  display: inline-block;
-  /*position: relative;
-  top: 100em;*/
-}
-body main #columnLeft {
-  width: 15%;
+body #item2 {
   min-width: 19ch;
 }
-body main #columnLeft #dates {
+body #item2 #dates {
   max-width: 19ch;
 }
-body main #columnLeft #links {
+body #item2 #links {
   max-width: 19ch;
 }
-body main #columnCenter {
-  width: 68%;
+body #item3 {
   padding-left: 1%;
   min-width: 79ch;
   border-left-style: solid;
-  border-right-style: solid;
 }
-body main #columnCenter #contentTitle {
+body #item3 #contentTitle {
   max-width: 79ch;
 }
-body main #columnCenter #contentTitle h2 {
+body #item3 #contentTitle h2 {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-body main #columnCenter #contentTitle a {
+body #item3 #contentTitle a {
   font-family: Verdana;
   color: #262626;
 }
-body main #columnCenter #contentTitle a:hover {
+body #item3 #contentTitle a:hover {
   color: #000000;
 }
-body main #columnCenter #dates {
+body #item3 #dates {
   max-width: 79ch;
 }
-body main #columnCenter #summaryContent {
+body #item3 #summaryContent {
   max-width: 79ch;
 }
-body main #columnRight {
-  width: 15%;
+body #item4 {
   min-width: 19ch;
   border-left-style: solid;
 }
-body footer {
-  display: block;
-}
-body footer nav {
+body #item5 nav {
   padding-top: 1%;
   text-align: center;
 }
-body footer nav a {
+body #item5 nav a {
   color: #737373;
   font-family: Verdana;
 }
-body footer #networkinglinks {
+body #item5 #networkinglinks {
   text-align: center;
 }
-body footer #license {
+body #item5 #license {
   text-align: center;
   font-family: Tahoma;
   color: #737373;

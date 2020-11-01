@@ -9,33 +9,50 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<link rel="stylesheet" href="styles.css">
 		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<style>
+			.item1 { grid-area: header; }
+			.item2 { grid-area: columnLeft; }
+			.item3 { grid-area: columnCenter; }
+			.item4 { grid-area: columnRight; }
+			.item5 { grid-area: footer; }
+			
+			.grid-container {
+				display: inline-grid;
+				grid-template-areas:
+					'header' 1000px
+				
+			}
+		</style>
 	</head>
-	<body>
-		<header>
-			<div id="maintitle">
-				<a href="http://localhost/repo/main/index.html"><h1>Encoding/Decoding</h1></a>
+		<!--<header>-->
+		<body>
+		<div class="grid-container">
+			<div class="item1">
+				<div id="maintitle">
+					<a href="http://localhost/repo/main/index.html"><h1>Encoding/Decoding</h1></a>
+				</div>
+				<div id="networking">
+					<h3>Networking Links</h3>
+				<div id="networkinglinks">
+					<a href="https://github.com/ericstenberg">
+						<img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
+					</a>
+					<a href="https://stackoverflow.com/users/10241858/ericstenberg">
+						<img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
+					</a>
+					<a href="https://twitter.com/ericstenberg0">
+						<img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
+					</a>
+					<a href="https://www.linkedin.com/in/ericdstenberg">
+						<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
+					</a>
+				</div>
+				</div>
 			</div>
-			<div id="networking">
-				<h3>Networking Links</h3>
-			<div id="networkinglinks">
-				<a href="https://github.com/ericstenberg">
-					<img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
-				</a>
-				<a href="https://stackoverflow.com/users/10241858/ericstenberg">
-					<img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
-				</a>
-				<a href="https://twitter.com/ericstenberg0">
-					<img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
-				</a>
-				<a href="https://www.linkedin.com/in/ericdstenberg">
-					<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
-				</a>
-			</div>
-			</div>
-		</header>
-		<main>
-			<div id="columnLeft">
-				<!--<div id="fillerbox"></div>-->
+			
+		<!--</header>-->
+		<!--<main>-->
+<!-- 		<div id="item2">
 				<h3>
 					<div id="latestposts">Latest Posts</div>
 				</h3>
@@ -66,8 +83,7 @@
 				</script>
 				</div>
 			</div>
-			<!--<div id="fillerbox"></div>-->
-			<div id="columnCenter">
+			<div id="item3">
 				<div id="contentData"></div>
 				<script>
 					(function() {
@@ -102,9 +118,8 @@
 					})();
 				</script>
 			</div>
-			<!--<div id="columnRight"></div>-->
-			</main>
-		<footer>
+			<div id="item4">test</div>
+		<div id="item5">
 			<nav>
 				<a href="http://localhost/repo/main/index.html">Home</a>
 				<a href="https://github.com/ericstenberg/encodingdecoding/blob/master/LICENSE">License</a>
@@ -126,8 +141,10 @@
 				<br /><br />
 			</div>
 			<div id="license">This page is available under the GNU Affero General Public License v3.0</div>
-		</footer>
+		</div> -->
+	</div>
 	</body>
+		<!--</footer>-->
 </html>
 <!--https://www.w3schools.com/TAGs/tryit.asp?filename=tryhtml_link_image-->
 <!--https://www.w3schools.com/tags/tag_button.asp-->

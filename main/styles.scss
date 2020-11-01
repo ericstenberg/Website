@@ -41,23 +41,24 @@ a:hover{
 
 html {
 	//height: 100%;
-	width: 100%;
+	//width: 100%;
 	//margin: 0;
 	/*padding-left: 10%;
 	padding-right: 10%;
 	padding-top: 5%;
 	padding-bottom: 5%;*/
 }
-
+	
 body {
-	padding-left: 10%;
-	padding-right: 10%;
 	padding-top: 5%;
 	padding-bottom: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
 	
-	header {
-		box-sizing: border-box;
-		display: block;
+
+	#item1 {
+		//box-sizing: border-box;
+		//display: block;
 		//height: 10%;
 		//width: 90%;
 		border-top-style: none;
@@ -70,8 +71,8 @@ body {
 		}
 		
 		#maintitle {
-			text-align: left;
-			width: 50%;
+			//text-align: left;
+			//width: 50%;
 			h1 {
 				margin-bottom: 0;
 				padding-bottom: 0;
@@ -83,7 +84,7 @@ body {
 		}
 		#networking {
 			text-align: right;
-			width: 49.5%;
+			//width: 49.5%;
 				h3 {
 					font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
 					margin-bottom: 0;
@@ -99,50 +100,18 @@ body {
 				}
 			}
 		}
-	} // Header is good to go!
-	main {
-		padding-top: 1%;
-		//justify-content: start;
-		//align-content: start;
-		//display: block;
-		//position: relative;
-		//height: 100%;
+	}
+	
+
+
 		
-		/*#columnLeft {
-			display: block;
-			box-sizing: border-box;
-		}*/
-		
-		#columnLeft, #columnCenter, #columnRight {
-			box-sizing: border-box;
-			display: inline-block;
-			//padding-top: 1%;
-			//height: auto;
-			/*position: relative;
-			top: 100em;*/
+
+		#item2, #item3, #item4 {
 		}
-		
-		#columnLeft {
-			width: 15%;
+
+		#item2 {
 			min-width: $countCharLeft;
-			//margin: 0em;
-			//padding-bottom: 10%;
-			//margin: 1000em;
-			//box-sizing: content-box;
-			//position: relative;
-			//bottom: 100em;
-			//justify-content: top;
-			//height: 100%;
-			//padding-top: 100%;
-			//margin-top: 100%;
-			//justify-content: top;
-			//position: absolute; absolute overlaps box
-			//display: inline-block;
-			//position: -webkit-sticky;
-			//position: sticky;
-			//position: relative;
-			//top: -10000px;
-			//top: -50%;
+
 			#dates {
 				max-width: $countCharLeft;
 			}
@@ -150,15 +119,11 @@ body {
 				max-width: $countCharLeft;
 			}
 		}
-		#columnCenter {
-			//box-sizing: content-box;
-			//display: block;
-			//height: 100%;
-			width: 68%;
+
+		#item3 {
 			padding-left: 1%;
 			min-width: $countCharCenter;
 			border-left-style: solid;
-			border-right-style: solid;
 			#contentTitle {
 				max-width: $countCharCenter;
 				h2 {
@@ -180,20 +145,14 @@ body {
 				max-width: $countCharCenter;
 			}	
 		}
-		#columnRight {
-			//box-sizing: content-box;
-			//height: 100%;
-			width: 15%;
+		
+
+		#item4 {
 			min-width: $countCharLeft;
 			border-left-style: solid;
-			// make columnRight disappear if zoomed in.
 		}
-	}
 
-	footer{
-		//padding-top: 1%
-		//width: 80%;
-		display: block;
+	#item5 {
 		nav {
 			padding-top: 1%;
 			text-align: $alignCenter;
