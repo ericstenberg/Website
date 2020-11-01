@@ -76,8 +76,6 @@ body header #networking #networkinglinks a img {
 }
 body main {
   padding-top: 1%;
-  justify-content: start;
-  align-content: start;
   /*#columnLeft {
   	display: block;
   	box-sizing: border-box;
