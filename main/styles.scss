@@ -16,6 +16,60 @@ $textColorUnhighlightedlinksDatesLicenses: #737373;
 $countCharCenter: 79ch;
 $countCharLeft: 19ch;
 
+.item1 { grid-area: header;
+	box-sizing: border-box;
+	h1 {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks
+	}
+	
+	border-bottom-style: solid;
+	
+	#maintitle, #networking {
+		display: inline-block;
+	}
+
+	#maintitle {
+		text-align: left;
+		width: 50%;
+		a {
+			color: $textColorTitleHighlightedlinksNetworkinglinksLatestpostsAdjacentposts;
+		}
+	}
+	#networking {
+		text-align: right;
+		width: 49.5%;
+		h3 {
+			font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			display: inline;
+		}
+		#networkinglinks {
+		display: inline;
+			a {
+				img {
+					padding-left: 1%;
+				}
+			}
+		}
+	}
+}
+.item2 { grid-area: columnLeft; }
+.item3 { grid-area: columnCenter; }
+.item4 { grid-area: columnRight; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+	display: grid;
+	grid-template-areas:
+	'header header header'
+	'columnLeft columnCenter columnCenter'
+	'footer footer footer';
+	grid-gap: 1%;
+}
+
 a {
 	text-decoration-line: none;
 	color: $textColorUnhighlightedlinksDatesLicenses;
@@ -39,128 +93,99 @@ a:hover{
 	font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
 }
 
-html {
-	//height: 100%;
-	//width: 100%;
-	//margin: 0;
-	/*padding-left: 10%;
-	padding-right: 10%;
-	padding-top: 5%;
-	padding-bottom: 5%;*/
-}
-	
 body {
 	padding-top: 5%;
 	padding-bottom: 5%;
 	padding-left: 10%;
 	padding-right: 10%;
-	
 
 	#item1 {
-		//box-sizing: border-box;
-		//display: block;
-		//height: 10%;
-		//width: 90%;
-		border-top-style: none;
-		border-left-style: none;
-		border-bottom-style: solid;
-		border-right-style: none;
-				
 		#maintitle, #networking {
 			display: inline-block;
 		}
 		
 		#maintitle {
-			//text-align: left;
-			//width: 50%;
-			h1 {
+			/*h1 {
 				margin-bottom: 0;
 				padding-bottom: 0;
 				font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
-			}
+			}*/
 			a {
 					color: $textColorTitleHighlightedlinksNetworkinglinksLatestpostsAdjacentposts;
 			}
 		}
 		#networking {
-			text-align: right;
+			//text-align: right;
 			//width: 49.5%;
 				h3 {
 					font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
 					margin-bottom: 0;
 					padding-bottom: 0;
-					display: inline;
+					//display: inline;
 				}
 			#networkinglinks {
-				display: inline;
+				display: inline-block;
 				a {
 					img {
-						padding-left: 1%;
+						//padding-left: 100%;
 					}
 				}
 			}
 		}
 	}
-	
+/*	
+	#item2 {
+		min-width: $countCharLeft;
 
+		#dates {
+			max-width: $countCharLeft;
+		}
+		#links {
+			max-width: $countCharLeft;
+		}
+	}
 
+	#item3 {
+		padding-left: 1%;
+		min-width: $countCharCenter;
+		border-left-style: solid;
+		#contentTitle {
+			max-width: $countCharCenter;
+			h2 {
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+			a {
+				font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+				color: $textColorContenttitlesHeaders;
+			}
+			a:hover {
+				color: $textColorTitleHighlightedlinksNetworkinglinksLatestpostsAdjacentposts;
+			}
+		}
+		#dates {
+			max-width: $countCharCenter;
+		}
+		#summaryContent {
+			max-width: $countCharCenter;
+		}	
+	}
 		
 
-		#item2, #item3, #item4 {
-		}
-
-		#item2 {
-			min-width: $countCharLeft;
-
-			#dates {
-				max-width: $countCharLeft;
-			}
-			#links {
-				max-width: $countCharLeft;
-			}
-		}
-
-		#item3 {
-			padding-left: 1%;
-			min-width: $countCharCenter;
-			border-left-style: solid;
-			#contentTitle {
-				max-width: $countCharCenter;
-				h2 {
-					margin-bottom: 0;
-					padding-bottom: 0;
-				}
-				a {
-					font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
-					color: $textColorContenttitlesHeaders;
-				}
-				a:hover {
-					color: $textColorTitleHighlightedlinksNetworkinglinksLatestpostsAdjacentposts;
-				}
-			}
-			#dates {
-				max-width: $countCharCenter;
-			}
-			#summaryContent {
-				max-width: $countCharCenter;
-			}	
-		}
-		
-
-		#item4 {
-			min-width: $countCharLeft;
-			border-left-style: solid;
-		}
+	#item4 {
+		min-width: $countCharLeft;
+		border-left-style: solid;
+	}
 
 	#item5 {
-		nav {
+		//nav {
 			padding-top: 1%;
 			text-align: $alignCenter;
 			a {
 				color: $textColorUnhighlightedlinksDatesLicenses;
 				font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
 			}
-		}
+		//}
 		#networkinglinks {
 			text-align: $alignCenter;
 		}
@@ -170,4 +195,5 @@ body {
 			color: $textColorUnhighlightedlinksDatesLicenses;
 		}
 	}
+	*/
 }

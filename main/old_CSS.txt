@@ -170,3 +170,10 @@ iframe {
 			//vertical-align: bottom;
 			//horizontal-align: right;
 		//}
+
+		//display: block;
+		//height: 10%;
+		//width: 90%;
+
+			//text-align: left;
+			//width: 50%;

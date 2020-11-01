@@ -1,3 +1,62 @@
+.item1 {
+  grid-area: header;
+  box-sizing: border-box;
+  border-bottom-style: solid;
+}
+.item1 h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-family: Verdana;
+}
+.item1 #maintitle, .item1 #networking {
+  display: inline-block;
+}
+.item1 #maintitle {
+  text-align: left;
+  width: 50%;
+}
+.item1 #maintitle a {
+  color: #000000;
+}
+.item1 #networking {
+  text-align: right;
+  width: 49.5%;
+}
+.item1 #networking h3 {
+  font-family: Verdana;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: inline;
+}
+.item1 #networking #networkinglinks {
+  display: inline;
+}
+.item1 #networking #networkinglinks a img {
+  padding-left: 1%;
+}
+
+.item2 {
+  grid-area: columnLeft;
+}
+
+.item3 {
+  grid-area: columnCenter;
+}
+
+.item4 {
+  grid-area: columnRight;
+}
+
+.item5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header header header" "columnLeft columnCenter columnCenter" "footer footer footer";
+  grid-gap: 1%;
+}
+
 a {
   text-decoration-line: none;
   color: #737373;
@@ -21,104 +80,95 @@ a:hover {
   font-family: Verdana;
 }
 
-html {
-  /*padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;*/
-}
-
 body {
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 10%;
   padding-right: 10%;
-}
-body #item1 {
-  border-top-style: none;
-  border-left-style: none;
-  border-bottom-style: solid;
-  border-right-style: none;
+  /*	
+  	#item2 {
+  		min-width: $countCharLeft;
+
+  		#dates {
+  			max-width: $countCharLeft;
+  		}
+  		#links {
+  			max-width: $countCharLeft;
+  		}
+  	}
+
+  	#item3 {
+  		padding-left: 1%;
+  		min-width: $countCharCenter;
+  		border-left-style: solid;
+  		#contentTitle {
+  			max-width: $countCharCenter;
+  			h2 {
+  				margin-bottom: 0;
+  				padding-bottom: 0;
+  			}
+  			a {
+  				font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+  				color: $textColorContenttitlesHeaders;
+  			}
+  			a:hover {
+  				color: $textColorTitleHighlightedlinksNetworkinglinksLatestpostsAdjacentposts;
+  			}
+  		}
+  		#dates {
+  			max-width: $countCharCenter;
+  		}
+  		#summaryContent {
+  			max-width: $countCharCenter;
+  		}	
+  	}
+
+
+  	#item4 {
+  		min-width: $countCharLeft;
+  		border-left-style: solid;
+  	}
+
+  	#item5 {
+  		//nav {
+  			padding-top: 1%;
+  			text-align: $alignCenter;
+  			a {
+  				color: $textColorUnhighlightedlinksDatesLicenses;
+  				font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+  			}
+  		//}
+  		#networkinglinks {
+  			text-align: $alignCenter;
+  		}
+  		#license {
+  			text-align: $alignCenter;
+  			font-family: $textFontDatesLicenses;
+  			color: $textColorUnhighlightedlinksDatesLicenses;
+  		}
+  	}
+  	*/
 }
 body #item1 #maintitle, body #item1 #networking {
   display: inline-block;
 }
-body #item1 #maintitle h1 {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  font-family: Verdana;
+body #item1 #maintitle {
+  /*h1 {
+  	margin-bottom: 0;
+  	padding-bottom: 0;
+  	font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+  }*/
 }
 body #item1 #maintitle a {
   color: #000000;
-}
-body #item1 #networking {
-  text-align: right;
 }
 body #item1 #networking h3 {
   font-family: Verdana;
   margin-bottom: 0;
   padding-bottom: 0;
-  display: inline;
 }
 body #item1 #networking #networkinglinks {
-  display: inline;
-}
-body #item1 #networking #networkinglinks a img {
-  padding-left: 1%;
-}
-body #item2 {
-  min-width: 19ch;
-}
-body #item2 #dates {
-  max-width: 19ch;
-}
-body #item2 #links {
-  max-width: 19ch;
-}
-body #item3 {
-  padding-left: 1%;
-  min-width: 79ch;
-  border-left-style: solid;
-}
-body #item3 #contentTitle {
-  max-width: 79ch;
-}
-body #item3 #contentTitle h2 {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-body #item3 #contentTitle a {
-  font-family: Verdana;
-  color: #262626;
-}
-body #item3 #contentTitle a:hover {
-  color: #000000;
-}
-body #item3 #dates {
-  max-width: 79ch;
-}
-body #item3 #summaryContent {
-  max-width: 79ch;
-}
-body #item4 {
-  min-width: 19ch;
-  border-left-style: solid;
-}
-body #item5 nav {
-  padding-top: 1%;
-  text-align: center;
-}
-body #item5 nav a {
-  color: #737373;
-  font-family: Verdana;
-}
-body #item5 #networkinglinks {
-  text-align: center;
-}
-body #item5 #license {
-  text-align: center;
-  font-family: Tahoma;
-  color: #737373;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=styles.css.map */
