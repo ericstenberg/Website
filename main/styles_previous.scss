@@ -16,12 +16,19 @@ $textColorUnhighlightedlinksDatesLicenses: #737373;
 $countCharCenter: 79ch;
 $countCharLeft: 19ch;
 
-
+.grid-container {
+	display: grid;
+	grid-template-areas:
+	'header header header'
+	'columnLeft columnCenter columnRight'
+	'footer footer footer';
+	//grid-template-columns: 50px 50px 50px;
+}
 
 .item1 { grid-area: header;
+	//width: 99%;
 	box-sizing: border-box;
 	padding-bottom: 1%;
-	border-bottom-style: solid;
 	
 	h1 {
 		margin-bottom: 0;
@@ -29,7 +36,7 @@ $countCharLeft: 19ch;
 		font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks
 	}
 	
-
+	border-bottom-style: solid;
 	
 	#maintitle, #networking {
 		display: inline-block;
@@ -64,7 +71,9 @@ $countCharLeft: 19ch;
 
 .item2 { grid-area: columnLeft;
 	box-sizing: border-box;
-	min-width: $countCharLeft;
+	//min-width: $countCharLeft;
+	//max-width: 33%;
+	//width: 33%;
 	#dates {
 		max-width: $countCharLeft;
 	}
@@ -75,9 +84,11 @@ $countCharLeft: 19ch;
 
 .item3 { grid-area: columnCenter;
 	box-sizing: border-box;
-	padding-left: 1%;
-	min-width: $countCharCenter;
-	border-left-style: solid;
+	//padding-left: 1%;
+	//min-width: $countCharCenter;
+	//border-left-style: solid;
+	//width: 33%;
+	//max-width: 33%;
 	max-width: $countCharCenter;
 	#contentTitle {
 		max-width: $countCharCenter;
@@ -103,10 +114,15 @@ $countCharLeft: 19ch;
 
 .item4 { grid-area: columnRight;
 	box-sizing: border-box;
-	min-width: $countCharLeft;
+	//min-width: $countCharLeft;
+	//max-width: 33%;
+	//width: 33%;
+	//height: 100%;
+	//width: $countCharLeft;
 	border-left-style: solid;
 }
 .item5 { grid-area: footer;
+	//width: 99%;
 	box-sizing: border-box;
 	padding-top: 1%;
 	text-align: $alignCenter;
@@ -122,14 +138,6 @@ $countCharLeft: 19ch;
 		font-family: $textFontDatesLicenses;
 		color: $textColorUnhighlightedlinksDatesLicenses;
 	}
-}
-
-.grid-container {
-	display: grid;
-	grid-template-areas:
-	'header header header'
-	'columnLeft columnCenter columnRight'
-	'footer footer footer';
 }
 
 a {
