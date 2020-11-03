@@ -16,8 +16,6 @@ $textColorUnhighlightedlinksDatesLicenses: #737373;
 $countCharCenter: 79ch;
 $countCharLeft: 19ch;
 
-
-
 .item1 { grid-area: header;
 	box-sizing: border-box;
 	padding-bottom: 1%;
@@ -28,9 +26,7 @@ $countCharLeft: 19ch;
 		padding-bottom: 0;
 		font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks
 	}
-	
-
-	
+		
 	#maintitle, #networking {
 		display: inline-block;
 	}
@@ -63,8 +59,13 @@ $countCharLeft: 19ch;
 }
 
 .item2 { grid-area: columnLeft;
+	padding-top: 0;
 	box-sizing: border-box;
 	min-width: $countCharLeft;
+	h3 {
+		margin-top: 0;
+		font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+	}
 	#dates {
 		max-width: $countCharLeft;
 	}
@@ -78,12 +79,11 @@ $countCharLeft: 19ch;
 	padding-left: 1%;
 	min-width: $countCharCenter;
 	border-left-style: solid;
-	max-width: $countCharCenter;
 	#contentTitle {
 		max-width: $countCharCenter;
 		h2 {
 			margin-bottom: 0;
-			padding-bottom: 0;
+			margin-top: 0;
 		}
 		a {
 			font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
@@ -98,6 +98,7 @@ $countCharLeft: 19ch;
 	}
 	#summaryContent {
 		max-width: $countCharCenter;
+		padding-bottom: 5%;
 	}
 }
 
@@ -106,19 +107,31 @@ $countCharLeft: 19ch;
 	min-width: $countCharLeft;
 	border-left-style: solid;
 }
+
 .item5 { grid-area: footer;
 	box-sizing: border-box;
-	padding-top: 1%;
 	text-align: $alignCenter;
-	a {
-		color: $textColorUnhighlightedlinksDatesLicenses;
-		font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+	nav {
+		display: block;
+		a {
+			padding-left: 2%;
+			padding-right: 2%;
+			color: $textColorUnhighlightedlinksDatesLicenses;
+			font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+		}
 	}
 	#networkinglinks {
-		text-align: $alignCenter;
+		display: block;
+		padding-bottom: 1%;
+		padding-top: 1%;
+			a {
+				img {
+					padding-left: 0.5%;
+					padding-right: 0.5%;
+				}
+			}
 	}
 	#license {
-		text-align: $alignCenter;
 		font-family: $textFontDatesLicenses;
 		color: $textColorUnhighlightedlinksDatesLicenses;
 	}
@@ -130,6 +143,7 @@ $countCharLeft: 19ch;
 	'header header header'
 	'columnLeft columnCenter columnRight'
 	'footer footer footer';
+	gap: 1%;
 }
 
 a {
