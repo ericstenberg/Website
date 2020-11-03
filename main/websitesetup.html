@@ -51,31 +51,35 @@
 				</h3>
 				<div id="latestPostsData">
 					<script>
-			(function() {
-				var content = "http://localhost/repo/main/data/contentpages.json";
-				$.getJSON( content, {
-					tags: "pages",
-					tagmode: "any",
-					format: "json"
-				})
-				.done(function( data ) {
-					var j = data.pages.length - 0;
-					// https://stackoverflow.com/questions/453209/how-do-i-get-the-total-json-record-count-using-jquery
-					$.each( data.pages.reverse(), function( i, item ) {
-						if(i > (j - 6) && i < (j + 3)){
-							$("#ColumnLeft").append(item.publishMonth + " " + item.publishDay
-								+ ", " + item.publishYear + "<br />"
-								+ "<a href=" + item.url + ">" + item.contentTitle
-								+ "</a><br /><br />");
-						}
-					});
-				  });
-				})();
+						(function() {
+							var content = "http://localhost/repo/main/data/contentpages.json";
+							$.getJSON( content, {
+								tags: "pages",
+								tagmode: "any",
+								format: "json"
+							})
+							.done(function( data ) {
+								var j = data.pages.length - 0;
+								// https://stackoverflow.com/questions/453209/how-do-i-get-the-total-json-record-count-using-jquery
+								$.each( data.pages.reverse(), function( i, item ) {
+									if(i > (j - 6) && i < (j + 3)){
+										$("#latestPostsData").append(
+											"<div id=dates>" + item.publishMonth + " " + item.publishDay
+											+ ", " + item.publishYear + "</div><div id=links>"
+											+ "<a href=" + item.url + ">" + item.contentTitle
+											+ "</a></div><br /><br />");
+									}
+								});
+							  });
+							})();
 					</script>
 				</div>
 			</div>
 			<div class="item3">
-				<div id="contentData"></div>
+					<h2><div id="contentTitle"></div></h2>
+					<div id="publishDate"></div>
+					<div id="updateDate"></div>
+					<div id="repository"></div>
 				<script>
 						(function() { // Currently runs through database and finds
 									// article that corresponds to if statement.
@@ -110,7 +114,7 @@
 								});
 							});							
 						})();
-				</script>		 
+				</script>	 
 	 <h3>Introduction</h3>
      <p>HTML and CSS form the backbone of this website. For a fuller understanding of the interaction of the elements underlying the site, right-click on any of these pages and click "View Page Source" or similar in whatever browser you use.</p>
      <p>The basic elements used on this website are below. By no means is this an exhaustive list, but should be used as a starting point. Let's begin!</p>

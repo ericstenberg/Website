@@ -20,11 +20,12 @@ $countCharLeft: 19ch;
 	box-sizing: border-box;
 	padding-bottom: 1%;
 	border-bottom-style: solid;
+	font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks
 	
 	h1 {
 		margin-bottom: 0;
 		padding-bottom: 0;
-		font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks
+
 	}
 		
 	#maintitle, #networking {
@@ -34,15 +35,16 @@ $countCharLeft: 19ch;
 	#maintitle {
 		text-align: left;
 		width: 50%;
+		font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
 		a {
 			color: $textColorTitleHighlightedlinksNetworkinglinksLatestpostsAdjacentposts;
 		}
 	}
 	#networking {
+		font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
 		text-align: right;
 		width: 49.5%;
 		h3 {
-			font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
 			margin-bottom: 0;
 			padding-bottom: 0;
 			display: inline;
@@ -62,6 +64,7 @@ $countCharLeft: 19ch;
 	padding-top: 0;
 	box-sizing: border-box;
 	min-width: $countCharLeft;
+	
 	h3 {
 		margin-top: 0;
 		font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
@@ -147,6 +150,11 @@ $countCharLeft: 19ch;
 	'columnLeft columnCenter columnRight'
 	'footer footer footer';
 	gap: 1%;
+}
+
+p {
+	font-family: $textFontSummaryContent;
+	color: $textColorSummaryContent;
 }
 
 a {

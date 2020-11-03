@@ -3,11 +3,9 @@
   box-sizing: border-box;
   padding-bottom: 1%;
   border-bottom-style: solid;
-}
-.item1 h1 {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  font-family: Verdana;
+  font-family: Verdana h1;
+  font-family-margin-bottom: 0;
+  font-family-padding-bottom: 0;
 }
 .item1 #maintitle, .item1 #networking {
   display: inline-block;
@@ -15,16 +13,17 @@
 .item1 #maintitle {
   text-align: left;
   width: 50%;
+  font-family: Verdana;
 }
 .item1 #maintitle a {
   color: #000000;
 }
 .item1 #networking {
+  font-family: Verdana;
   text-align: right;
   width: 49.5%;
 }
 .item1 #networking h3 {
-  font-family: Verdana;
   margin-bottom: 0;
   padding-bottom: 0;
   display: inline;
@@ -124,6 +123,11 @@
   display: grid;
   grid-template-areas: "header header header" "columnLeft columnCenter columnRight" "footer footer footer";
   gap: 1%;
+}
+
+p {
+  font-family: Arial;
+  color: #4C4C4C;
 }
 
 a {
