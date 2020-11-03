@@ -3,9 +3,9 @@
 	<head>
 		<title>Setting Up This Website | Encoding/Decoding</title>
 		<meta name="description" content="Setting Up This Website describes how to set up a basic website using HTML and CSS.">
+		<meta name="keywords" content="HTML,CSS">
 		<meta name="robots" content="noodp,noydir">
 		<meta name="author" content="Eric Stenberg">
-		<meta name="keywords" content="HTML,CSS">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<link rel="stylesheet" href="styles.css">
@@ -22,61 +22,33 @@
 		<meta property='og:url' content='/localhost/repo/main/websitesetup.html'/>
 	</head>
 	<body>
-		<div class="grid-container">
-			<div class="item1">
-				<div id="maintitle">
-					<a href="http://localhost/repo/main/index.html"><h1>Encoding/Decoding</h1></a>
-				</div>
-				<div id="networking">
-					<h3>Networking Links</h3>
-					<div id="networkinglinks">
-						<a href="https://github.com/ericstenberg">
-							<img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
-						</a>
-						<a href="https://stackoverflow.com/users/10241858/ericstenberg">
-							<img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
-						</a>
-						<a href="https://twitter.com/ericstenberg0">
-							<img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
-						</a>
-						<a href="https://www.linkedin.com/in/ericdstenberg">
-							<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
-						</a>
-					</div>
-				</div>
+		<header>
+			<h1><a href="index.html">Encoding/Decoding</a></h1>
+			<div id="networkinglinkstitle">Networking Links</div>
+			<div id="networkinglinks">
+				<a href="https://github.com/ericstenberg">
+					<img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
+				</a>
+				<a href="https://stackoverflow.com/users/10241858/ericstenberg">
+					<img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
+				</a>
+				<a href="https://twitter.com/ericstenberg0">
+					<img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
+				</a>
+				<a href="https://www.linkedin.com/in/ericdstenberg">
+					<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
+				</a>
 			</div>
-			<div class="item2">
-				<h3>
-					<div id="latestposts">Adjacent Posts</div>
-				</h3>
-				<div id="latestPostsData">
+		</header>
+		<main>
+			<div id="Container">
+				<div id="ColumnCenterOther">
+					<h2><div id="contentTitle"></div></h2>
+					<div id="publishDate"></div>
+					<div id="updateDate"></div>
+					<div id="repository"></div>
+					<br />
 					<script>
-			(function() {
-				var content = "http://localhost/repo/main/data/contentpages.json";
-				$.getJSON( content, {
-					tags: "pages",
-					tagmode: "any",
-					format: "json"
-				})
-				.done(function( data ) {
-					var j = data.pages.length - 0;
-					// https://stackoverflow.com/questions/453209/how-do-i-get-the-total-json-record-count-using-jquery
-					$.each( data.pages.reverse(), function( i, item ) {
-						if(i > (j - 6) && i < (j + 3)){
-							$("#ColumnLeft").append(item.publishMonth + " " + item.publishDay
-								+ ", " + item.publishYear + "<br />"
-								+ "<a href=" + item.url + ">" + item.contentTitle
-								+ "</a><br /><br />");
-						}
-					});
-				  });
-				})();
-					</script>
-				</div>
-			</div>
-			<div class="item3">
-				<div id="contentData"></div>
-				<script>
 						(function() { // Currently runs through database and finds
 									// article that corresponds to if statement.
 									// Not efficient. Need to optimize.
@@ -110,7 +82,10 @@
 								});
 							});							
 						})();
-				</script>		 
+					</script>
+     <!--<h2>Setting Up This Website</h2>
+     <p><i>Github Repository: </i><a href="https://github.com/ericstenberg/encodingdecoding">encodingdecoding</a></p>-->
+	 
 	 <h3>Introduction</h3>
      <p>HTML and CSS form the backbone of this website. For a fuller understanding of the interaction of the elements underlying the site, right-click on any of these pages and click "View Page Source" or similar in whatever browser you use.</p>
      <p>The basic elements used on this website are below. By no means is this an exhaustive list, but should be used as a starting point. Let's begin!</p>
@@ -322,9 +297,32 @@
 				 <li><a href="https://www.firstscribe.com/google-change-title-description-search-results/">First Scribe Blog - Why Doesn't Google Use My Title Tag and Meta Description In Search Results?</a></li>
 			 </ol>
 		 </div>
-				
-			</div>
-			<div class="item4">
+    </div>
+	<h3>Adjacent Links</h3>
+    <div id="ColumnLeft"></div>
+		<script>
+			(function() {
+				var content = "http://localhost/repo/main/data/contentpages.json";
+				$.getJSON( content, {
+					tags: "pages",
+					tagmode: "any",
+					format: "json"
+				})
+				.done(function( data ) {
+					var j = data.pages.length - 0;
+					// https://stackoverflow.com/questions/453209/how-do-i-get-the-total-json-record-count-using-jquery
+					$.each( data.pages.reverse(), function( i, item ) {
+						if(i > (j - 6) && i < (j + 3)){
+							$("#ColumnLeft").append(item.publishMonth + " " + item.publishDay
+								+ ", " + item.publishYear + "<br />"
+								+ "<a href=" + item.url + ">" + item.contentTitle
+								+ "</a><br /><br />");
+						}
+					});
+				  });
+				})();
+        </script>
+		<div id="ColumnRight">
 			<h3>Share this post!</h3>
 			<!--Twitter-->
 			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://stackoverflow.com/users/10241858/ericstenberg" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -337,29 +335,33 @@
 			WhatsApp
 			Text
 			Bookmark
-			-->	
-			</div>
-			<div class="item5">
-				<nav>
-					<a href="http://localhost/repo/main/index.html">Home</a>
-					<a href="https://github.com/ericstenberg/encodingdecoding/blob/master/LICENSE">License</a>
-				</nav>
-				<div id="networkinglinks">
-					<a href="https://github.com/ericstenberg">
-						<img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
-					</a>
-					<a href="https://stackoverflow.com/users/10241858/ericstenberg">
-						<img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
-					</a>
-					<a href="https://twitter.com/ericstenberg0">
-						<img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
-					</a>
-					<a href="https://www.linkedin.com/in/ericdstenberg">
-						<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
-					</a>
-				</div>
-				<div id="license">This page is available under the GNU Affero General Public License v3.0</div>
-			</div>
+			-->		
 		</div>
+	</div>
+	</main>
+		<footer>
+			<nav>
+				<a href="http://localhost/repo/main/index.html">Home</a>
+				<!--<a href="disclaimerandprivacypolicy.html">Disclaimer / Privacy Policy</a>-->
+				<a href="https://github.com/ericstenberg/encodingdecoding/blob/master/LICENSE">License</a>
+						<br /><br />
+			</nav>
+			<div id="networkinglinks">
+				<a href="https://github.com/ericstenberg">
+					<img border="0" alt="Github" src="images/GitHub-Mark-120px-plus.png" height="25px" />
+				</a>
+				<a href="https://stackoverflow.com/users/10241858/ericstenberg">
+					<img border="0" alt="Stack Overflow" src="images/LogoGlyphMd.svg" height="25px" />
+				</a>
+				<a href="https://twitter.com/ericstenberg0">
+					<img border="0" alt="Twitter" src="images/Twitter_Social_Icon_Circle_Color.png" height="25px" />
+				</a>
+				<a href="https://www.linkedin.com/in/ericdstenberg">
+					<img border="0" alt="LinkedIn" src="images/LI-In-Bug.png" height="25px" />
+				</a>
+			</div>
+			<br /><br />
+			<div id="license">This page is available under the GNU Affero General Public License v3.0.</div>
+		</footer>
 	</body>
 </html>

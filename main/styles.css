@@ -59,6 +59,7 @@
   padding-left: 1%;
   min-width: 79ch;
   border-left-style: solid;
+  border-left-width: 1px;
 }
 .item3 #contentTitle {
   max-width: 79ch;
@@ -86,7 +87,9 @@
   grid-area: columnRight;
   box-sizing: border-box;
   min-width: 19ch;
+  padding-left: 1%;
   border-left-style: solid;
+  border-left-width: 1px;
 }
 
 .item5 {

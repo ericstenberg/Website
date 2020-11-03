@@ -79,6 +79,7 @@ $countCharLeft: 19ch;
 	padding-left: 1%;
 	min-width: $countCharCenter;
 	border-left-style: solid;
+	border-left-width: 1px;
 	#contentTitle {
 		max-width: $countCharCenter;
 		h2 {
@@ -105,7 +106,9 @@ $countCharLeft: 19ch;
 .item4 { grid-area: columnRight;
 	box-sizing: border-box;
 	min-width: $countCharLeft;
+	padding-left: 1%;
 	border-left-style: solid;
+	border-left-width: 1px;
 }
 
 .item5 { grid-area: footer;
