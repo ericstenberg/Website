@@ -75,6 +75,7 @@ $countCharLeft: 19ch;
 	#links {
 		max-width: $countCharLeft;
 	}
+
 }
 
 .item3 { grid-area: columnCenter;
@@ -85,10 +86,10 @@ $countCharLeft: 19ch;
 	border-left-width: 1px;
 	#contentTitle {
 		max-width: $countCharCenter;
-		h2 {
+		/*h2 {
 			margin-bottom: 0;
 			margin-top: 0;
-		}
+		}*/
 		a {
 			font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
 			color: $textColorContenttitlesHeaders;
@@ -99,10 +100,6 @@ $countCharLeft: 19ch;
 	}
 	#dates {
 		max-width: $countCharCenter;
-	}
-	#summaryContent {
-		max-width: $countCharCenter;
-		padding-bottom: 5%;
 	}
 }
 
@@ -152,9 +149,16 @@ $countCharLeft: 19ch;
 	gap: 1%;
 }
 
-p {
+/*p {
 	font-family: $textFontSummaryContent;
 	color: $textColorSummaryContent;
+}*/
+
+h2 {
+	margin-bottom: 0;
+	margin-top: 0;
+	font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+	color: $textColorContenttitlesHeaders;
 }
 
 a {
@@ -171,9 +175,15 @@ a:hover{
 	font-family: $textFontDatesLicenses;
 }
 
-#summaryContent {
+#summaryContent, p {
 	color: $textColorSummaryContent;
 	font-family: $textFontSummaryContent;
+	max-width: $countCharCenter;
+	//padding-bottom: 5%;
+}
+
+#summaryContent {
+	padding-bottom: 5%;
 }
 
 #links {

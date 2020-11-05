@@ -62,10 +62,10 @@
 }
 .item3 #contentTitle {
   max-width: 79ch;
-}
-.item3 #contentTitle h2 {
-  margin-bottom: 0;
-  margin-top: 0;
+  /*h2 {
+  	margin-bottom: 0;
+  	margin-top: 0;
+  }*/
 }
 .item3 #contentTitle a {
   font-family: Verdana;
@@ -76,10 +76,6 @@
 }
 .item3 #dates {
   max-width: 79ch;
-}
-.item3 #summaryContent {
-  max-width: 79ch;
-  padding-bottom: 5%;
 }
 
 .item4 {
@@ -125,9 +121,15 @@
   gap: 1%;
 }
 
-p {
-  font-family: Arial;
-  color: #4C4C4C;
+/*p {
+	font-family: $textFontSummaryContent;
+	color: $textColorSummaryContent;
+}*/
+h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: Verdana;
+  color: #262626;
 }
 
 a {
@@ -144,9 +146,14 @@ a:hover {
   font-family: Tahoma;
 }
 
-#summaryContent {
+#summaryContent, p {
   color: #4C4C4C;
   font-family: Arial;
+  max-width: 79ch;
+}
+
+#summaryContent {
+  padding-bottom: 5%;
 }
 
 #links {
