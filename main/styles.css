@@ -1,7 +1,6 @@
 .item1 {
   grid-area: header;
   box-sizing: border-box;
-  padding-bottom: 1%;
   border-bottom-style: solid;
   font-family: Verdana h1;
   font-family-margin-bottom: 0;
@@ -62,10 +61,6 @@
 }
 .item3 #contentTitle {
   max-width: 79ch;
-  /*h2 {
-  	margin-bottom: 0;
-  	margin-top: 0;
-  }*/
 }
 .item3 #contentTitle a {
   font-family: Verdana;
@@ -89,6 +84,10 @@
   padding-left: 1%;
   border-left-style: solid;
   border-left-width: 1px;
+}
+.item4 h3 {
+  font-family: Verdana;
+  margin-top: 0;
 }
 
 .item5 {
@@ -125,10 +124,6 @@
   gap: 1%;
 }
 
-/*p {
-	font-family: $textFontSummaryContent;
-	color: $textColorSummaryContent;
-}*/
 h2 {
   margin-bottom: 0;
   margin-top: 0;
@@ -172,11 +167,13 @@ a:hover {
 #tag {
   font-family: Arial;
   color: #4C4C4C;
+  max-width: 79ch;
 }
 
 #references {
   color: #4C4C4C;
   font-family: Arial;
+  max-width: 79ch;
 }
 
 body {
