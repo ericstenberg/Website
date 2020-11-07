@@ -77,6 +77,10 @@
 .item3 #dates {
   max-width: 79ch;
 }
+.item3 h3 {
+  font-family: Verdana;
+  color: #262626;
+}
 
 .item4 {
   grid-area: columnRight;
@@ -158,6 +162,21 @@ a:hover {
 
 #links {
   font-family: Verdana;
+}
+
+#repositoryformat {
+  font-family: Verdana;
+  color: #262626;
+}
+
+#tag {
+  font-family: Arial;
+  color: #4C4C4C;
+}
+
+#references {
+  color: #4C4C4C;
+  font-family: Arial;
 }
 
 body {

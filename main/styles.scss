@@ -25,7 +25,6 @@ $countCharLeft: 19ch;
 	h1 {
 		margin-bottom: 0;
 		padding-bottom: 0;
-
 	}
 		
 	#maintitle, #networking {
@@ -100,6 +99,10 @@ $countCharLeft: 19ch;
 	}
 	#dates {
 		max-width: $countCharCenter;
+	}
+	h3 {
+		font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+		color: $textColorContenttitlesHeaders
 	}
 }
 
@@ -179,7 +182,6 @@ a:hover{
 	color: $textColorSummaryContent;
 	font-family: $textFontSummaryContent;
 	max-width: $countCharCenter;
-	//padding-bottom: 5%;
 }
 
 #summaryContent {
@@ -188,6 +190,21 @@ a:hover{
 
 #links {
 	font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+}
+
+#repositoryformat {
+	font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
+	color: $textColorContenttitlesHeaders;
+}
+
+#tag {
+	font-family: $textFontSummaryContent;
+	color: $textColorSummaryContent;
+}
+
+#references {
+	color: $textColorSummaryContent;
+	font-family: $textFontSummaryContent;
 }
 
 body {
