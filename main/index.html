@@ -5,6 +5,7 @@
 		<meta name="description" content="Encoding/Decoding is an open source blog to find useful information about various technologies, languages, and hardware.">
 		<meta name="robots" content="noodp,noydir">
 		<meta name="author" content="Eric Stenberg">
+		<meta name="keywords" content="Encoding, Decoding">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<link rel="stylesheet" href="styles.css">
@@ -40,32 +41,33 @@
 				</h3>
 				<div id="latestPostsData">
 					<script>
-					(function() {
-					var content = "http://localhost/repo/main/data/contentpages.json";
-					$.getJSON( content, {
-					tags: "pages",
-					tagmode: "any",
-					format: "json"
-					})
-					.done(function( data ) {
-					$.each( data.pages.reverse(), function( i, item ) {
-					$("#latestPostsData").append(
-					"<div id=dates>"
-					+ item.publishMonth + " " + item.publishDay
-					+ ", " + item.publishYear
-					+ "</div><div id=links>"
-					+ "<a href=" + item.url + ">" + item.contentTitle
-					+ "</a></div><br /><br />");
-					if(i > 8){
-					return false;
-					}
-					});
-					});
-					})();
+						(function() {
+							var content = "http://localhost/repo/main/data/contentpages.json";
+							$.getJSON( content, {
+								tags: "pages",
+								tagmode: "any",
+								format: "json"
+							})
+							.done(function( data ) {
+								$.each( data.pages.reverse(), function( i, item ) {
+									$("#latestPostsData").append(
+									"<div id=dates>"
+									+ item.publishMonth + " " + item.publishDay
+									+ ", " + item.publishYear
+									+ "</div><div id=links>"
+									+ "<a href=" + item.url + ">" + item.contentTitle
+									+ "</a></div><br />");
+									if(i > 8){
+										return false;
+									}
+								});
+							});
+						})();
 					</script>
 				</div>
 			</div>
 			<div class="item3">
+				<div id="filler"></div>
 				<div id="contentData"></div>
 				<script>
 				(function() {

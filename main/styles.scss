@@ -59,9 +59,9 @@ $countCharLeft: 19ch;
 }
 
 .item2 { grid-area: columnLeft;
-	padding-top: 0;
 	box-sizing: border-box;
 	min-width: $countCharLeft;
+	padding-top: 0;
 	h3 {
 		margin-top: 0;
 		font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
@@ -76,7 +76,7 @@ $countCharLeft: 19ch;
 
 .item3 { grid-area: columnCenter;
 	box-sizing: border-box;
-	padding-left: 1%;
+	padding-left: 1em;
 	min-width: $countCharCenter;
 	border-left-style: solid;
 	border-left-width: 1px;
@@ -102,12 +102,13 @@ $countCharLeft: 19ch;
 .item4 { grid-area: columnRight;
 	box-sizing: border-box;
 	min-width: $countCharLeft;
-	padding-left: 1%;
+	padding-left: 1em;
 	border-left-style: solid;
 	border-left-width: 1px;
 	h3 {
 		font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
 		margin-top: 0;
+		max-width: $countCharCenter;
 	}
 }
 
@@ -146,7 +147,7 @@ $countCharLeft: 19ch;
 	'header header header'
 	'columnLeft columnCenter columnRight'
 	'footer footer footer';
-	gap: 1%;
+	gap: 1em;
 }
 
 h2 {
