@@ -39,6 +39,7 @@
   box-sizing: border-box;
   min-width: 19ch;
   padding-top: 0;
+  margin-top: 0;
 }
 .item2 h3 {
   margin-top: 0;
@@ -53,6 +54,8 @@
 
 .item3 {
   grid-area: columnCenter;
+  padding-top: 0;
+  margin-top: 0;
   box-sizing: border-box;
   padding-left: 1em;
   min-width: 79ch;
@@ -79,6 +82,8 @@
 
 .item4 {
   grid-area: columnRight;
+  padding-top: 0;
+  margin-top: 0;
   box-sizing: border-box;
   min-width: 19ch;
   padding-left: 1em;
@@ -93,6 +98,8 @@
 
 .item5 {
   grid-area: footer;
+  padding-top: 0;
+  margin-top: 0;
   box-sizing: border-box;
   text-align: center;
 }

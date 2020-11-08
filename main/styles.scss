@@ -62,6 +62,8 @@ $countCharLeft: 19ch;
 	box-sizing: border-box;
 	min-width: $countCharLeft;
 	padding-top: 0;
+	margin-top:0;
+	
 	h3 {
 		margin-top: 0;
 		font-family: $textFontTitleContenttitleNetworkinglinksLatestpostsAdjacentpostsHeadersLinks;
@@ -75,6 +77,8 @@ $countCharLeft: 19ch;
 }
 
 .item3 { grid-area: columnCenter;
+	padding-top: 0;
+	margin-top: 0;
 	box-sizing: border-box;
 	padding-left: 1em;
 	min-width: $countCharCenter;
@@ -100,6 +104,8 @@ $countCharLeft: 19ch;
 }
 
 .item4 { grid-area: columnRight;
+	padding-top: 0;
+	margin-top: 0;
 	box-sizing: border-box;
 	min-width: $countCharLeft;
 	padding-left: 1em;
@@ -113,6 +119,8 @@ $countCharLeft: 19ch;
 }
 
 .item5 { grid-area: footer;
+	padding-top: 0;
+	margin-top: 0;
 	box-sizing: border-box;
 	text-align: $alignCenter;
 	nav {
