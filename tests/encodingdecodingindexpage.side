@@ -14,12 +14,17 @@
       "targets": [],
       "value": "https://ericstenberg.github.io/encodingdecoding/index.html"
     }, {
-      "id": "66fe0b9c-9e4f-490a-986a-ae8efbc087d8",
+      "id": "071ef69e-59e7-49c3-bb39-5cb68ba8891f",
       "comment": "",
-      "command": "setWindowSize",
-      "target": "1442x757",
-      "targets": [],
-      "value": ""
+      "command": "waitForElementPresent",
+      "target": "id=license",
+      "targets": [
+        ["id=license", "id"],
+        ["css=#license", "css:finder"],
+        ["xpath=//div[@id='license']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": "5000"
     }, {
       "id": "d624b995-11ce-430c-8eb3-9a22365e003f",
       "comment": "",
@@ -47,12 +52,17 @@
       "targets": [],
       "value": "https://ericstenberg.github.io/encodingdecoding/index.html"
     }, {
-      "id": "7828ef4c-9cb7-4fbb-ba60-72b1c4f2ad81",
+      "id": "fc50a1e0-76c2-4e70-a4d1-058bca1e6227",
       "comment": "",
-      "command": "setWindowSize",
-      "target": "1360x784",
-      "targets": [],
-      "value": ""
+      "command": "waitForElementPresent",
+      "target": "id=license",
+      "targets": [
+        ["id=license", "id"],
+        ["css=#license", "css:finder"],
+        ["xpath=//div[@id='license']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": "5000"
     }, {
       "id": "8942d41a-48ea-4203-a64e-1eafab93f584",
       "comment": "",
@@ -70,7 +80,247 @@
   }, {
     "id": "2e952364-3a1b-4535-9834-4ed8db2af2bc",
     "name": "TestIndexHeader",
-    "commands": []
+    "commands": [{
+      "id": "6518151a-c641-4955-b65d-9fb2b77c09b2",
+      "comment": "",
+      "command": "open",
+      "target": "https://ericstenberg.github.io/encodingdecoding/index.html",
+      "targets": [],
+      "value": "https://ericstenberg.github.io/encodingdecoding/index.html"
+    }, {
+      "id": "a848c5a3-95b2-47db-84a6-ecf50f94b5d4",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=license",
+      "targets": [
+        ["id=license", "id"],
+        ["css=#license", "css:finder"],
+        ["xpath=//div[@id='license']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "2c888ffe-0f8c-4bda-b57e-aaee4974e8c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='maintitle']/a/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Encoding/Decoding')]", "xpath:innerText"]
+      ],
+      "value": "https://ericstenberg.github.io/encodingdecoding/index.html"
+    }]
+  }, {
+    "id": "b01d2a12-35a0-492d-b4f8-975d7d1ba6d5",
+    "name": "TestHeaderNetworkingLinksGithub",
+    "commands": [{
+      "id": "3adf68b2-1e63-4f20-8e32-bdf641288321",
+      "comment": "",
+      "command": "open",
+      "target": "https://ericstenberg.github.io/encodingdecoding/index.html",
+      "targets": [],
+      "value": "https://ericstenberg.github.io/encodingdecoding/index.html"
+    }, {
+      "id": "fe1061c5-f667-4c72-81fd-bdcff19d6a83",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=license",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "4c845978-1ee4-4d4f-a326-fcd399f277c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#networking a:nth-child(1) > img",
+      "targets": [
+        ["css=#networking a:nth-child(1) > img", "css:finder"],
+        ["xpath=//img[@alt='Github']", "xpath:img"],
+        ["xpath=//div[@id='networkinglinks']/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": "https://github.com/ericstenberg"
+    }]
+  }, {
+    "id": "b2d78c5b-09cf-4000-b5ac-d5fb7991c409",
+    "name": "TestHeaderNetworkingLinksStackOverflow",
+    "commands": [{
+      "id": "c7355f65-b4a5-4fd5-a03b-af4fea1c1137",
+      "comment": "",
+      "command": "open",
+      "target": "https://ericstenberg.github.io/encodingdecoding/index.html",
+      "targets": [],
+      "value": "https://ericstenberg.github.io/encodingdecoding/index.html"
+    }, {
+      "id": "8ecb6091-a71a-4cf5-92a3-fff09e63413f",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=license",
+      "targets": [
+        ["id=license", "id"],
+        ["css=#license", "css:finder"],
+        ["xpath=//div[@id='license']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "6abc8969-599d-4685-83e5-0b9562e9d64e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#networking a:nth-child(2) > img",
+      "targets": [
+        ["css=#networking a:nth-child(2) > img", "css:finder"],
+        ["xpath=//img[@alt='Stack Overflow']", "xpath:img"],
+        ["xpath=//div[@id='networkinglinks']/a[2]/img", "xpath:idRelative"],
+        ["xpath=//a[2]/img", "xpath:position"]
+      ],
+      "value": "https://stackoverflow.com/users/10241858/ericstenberg"
+    }]
+  }, {
+    "id": "e022c0a1-0432-4e2f-a03b-6211188307a1",
+    "name": "TestHeaderNetworkingLinksTwitter",
+    "commands": [{
+      "id": "d55fb665-91cc-492f-92c7-4b0226670541",
+      "comment": "",
+      "command": "open",
+      "target": "https://ericstenberg.github.io/encodingdecoding/index.html",
+      "targets": [],
+      "value": "https://ericstenberg.github.io/encodingdecoding/index.html"
+    }, {
+      "id": "1829e6fc-83b3-4b15-bbac-154b9164027e",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=license",
+      "targets": [
+        ["id=license", "id"],
+        ["css=#license", "css:finder"],
+        ["xpath=//div[@id='license']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "cfdd087c-1371-4cbb-8d40-1e242d2fa641",
+      "comment": "",
+      "command": "click",
+      "target": "css=#networking a:nth-child(3) > img",
+      "targets": [
+        ["css=#networking a:nth-child(3) > img", "css:finder"],
+        ["xpath=//img[@alt='Twitter']", "xpath:img"],
+        ["xpath=//div[@id='networkinglinks']/a[3]/img", "xpath:idRelative"],
+        ["xpath=//a[3]/img", "xpath:position"]
+      ],
+      "value": "https://twitter.com/ericstenberg0"
+    }]
+  }, {
+    "id": "ce593029-4d18-4260-aad1-d4d315302106",
+    "name": "TestHeaderNetworkingLinksLinkedIn",
+    "commands": [{
+      "id": "48144469-7cea-4ab6-9310-e33c0d9c95f1",
+      "comment": "",
+      "command": "open",
+      "target": "https://ericstenberg.github.io/encodingdecoding/index.html",
+      "targets": [],
+      "value": "https://ericstenberg.github.io/encodingdecoding/index.html"
+    }, {
+      "id": "a48363db-124b-4e27-b755-0c1962a8b70e",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=license",
+      "targets": [
+        ["id=license", "id"],
+        ["css=#license", "css:finder"],
+        ["xpath=//div[@id='license']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "3a9b8276-da0b-45cd-a0e9-fe0d86c9c6f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#networking a:nth-child(4) > img",
+      "targets": [
+        ["css=#networking a:nth-child(4) > img", "css:finder"],
+        ["xpath=//img[@alt='LinkedIn']", "xpath:img"],
+        ["xpath=//div[@id='networkinglinks']/a[4]/img", "xpath:idRelative"],
+        ["xpath=//a[4]/img", "xpath:position"]
+      ],
+      "value": "https://www.linkedin.com/authwall?trk=ripf&trkInfo=AQFoPGdUexqcBgAAAXXFOwWI3wNCZgdRHuM3cvoRADUeyOmDUIK4ilGn2y-CdLwfc7QrignXE0eSTSAiQ37906kUlQ-gDtHylD4A4R7BnIflfdupOxnGCR1xlBJzNnWiITqWAjk=&originalReferer=https://ericstenberg.github.io/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fericdstenberg"
+    }]
+  }, {
+    "id": "e6608074-19c5-422f-9c5b-61949fabf469",
+    "name": "TestFooterHome",
+    "commands": [{
+      "id": "a14eb6a2-8746-462a-bae1-9e5867844be5",
+      "comment": "",
+      "command": "open",
+      "target": "https://ericstenberg.github.io/encodingdecoding/index.html",
+      "targets": [],
+      "value": "https://ericstenberg.github.io/encodingdecoding/index.html"
+    }, {
+      "id": "94cd37fa-3b35-44a1-aa42-4cd56fb1a722",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=license",
+      "targets": [
+        ["id=license", "id"],
+        ["css=#license", "css:finder"],
+        ["xpath=//div[@id='license']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "5f50a537-952b-4903-b676-3a99769e9046",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=nav > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'index.html')])[2]", "xpath:href"],
+        ["xpath=//nav/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": "https://ericstenberg.github.io/encodingdecoding/index.html"
+    }]
+  }, {
+    "id": "3277a11f-2c92-426a-9029-05716b6eb07a",
+    "name": "TestFooterLicense",
+    "commands": [{
+      "id": "e56e32ee-38b8-4291-9329-ef2348f948c7",
+      "comment": "",
+      "command": "open",
+      "target": "https://ericstenberg.github.io/encodingdecoding/index.html",
+      "targets": [],
+      "value": "https://ericstenberg.github.io/encodingdecoding/index.html"
+    }, {
+      "id": "80f3dfa3-9b18-4f6d-bca3-e39dec859d26",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=license",
+      "targets": [
+        ["id=license", "id"],
+        ["css=#license", "css:finder"],
+        ["xpath=//div[@id='license']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "46749d73-2cba-42f9-a7c3-7f1be31ecfb7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=License",
+      "targets": [
+        ["linkText=License", "linkText"],
+        ["css=nav > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'License')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://github.com/ericstenberg/encodingdecoding/blob/master/LICENSE')]", "xpath:href"],
+        ["xpath=//nav/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'License')]", "xpath:innerText"]
+      ],
+      "value": "https://github.com/ericstenberg/encodingdecoding/blob/master/LICENSE"
+    }]
   }],
   "suites": [{
     "id": "04b5f312-7279-4753-b38e-a11472b77359",
