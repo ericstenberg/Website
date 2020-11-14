@@ -321,6 +321,146 @@
       ],
       "value": "https://github.com/ericstenberg/encodingdecoding/blob/master/LICENSE"
     }]
+  }, {
+    "id": "b22075ee-32b7-482d-9ecc-e2431d80d0b7",
+    "name": "TestFooterNetworkingLinksGithub",
+    "commands": [{
+      "id": "3806eaba-8b96-431e-b058-404d1b122b2f",
+      "comment": "",
+      "command": "open",
+      "target": "https://ericstenberg.github.io/encodingdecoding/index.html",
+      "targets": [],
+      "value": "https://ericstenberg.github.io/encodingdecoding/index.html"
+    }, {
+      "id": "16141a4e-6998-4811-8dc0-633c0c07b902",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=license",
+      "targets": [
+        ["id=license", "id"],
+        ["css=#license", "css:finder"],
+        ["xpath=//div[@id='license']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "64ea20af-1b2c-4006-b676-e4ffe0e62e1e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item5 a:nth-child(1) > img",
+      "targets": [
+        ["css=.item5 a:nth-child(1) > img", "css:finder"],
+        ["xpath=(//img[@alt='Github'])[2]", "xpath:img"],
+        ["xpath=(//div[@id='networkinglinks']/a/img)[5]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/a/img", "xpath:position"]
+      ],
+      "value": "https://github.com/ericstenberg"
+    }]
+  }, {
+    "id": "cdaee5f2-40ed-435f-8a2b-dea5c04c2841",
+    "name": "TestFooterNetworkingLinksStackOverflow",
+    "commands": [{
+      "id": "7f412162-c3e2-466a-9b97-5453a9a8befb",
+      "comment": "",
+      "command": "open",
+      "target": "https://ericstenberg.github.io/encodingdecoding/index.html",
+      "targets": [],
+      "value": "https://ericstenberg.github.io/encodingdecoding/index.html"
+    }, {
+      "id": "358bf979-85f0-4f2e-8f92-ac09b43a4475",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=license",
+      "targets": [
+        ["id=license", "id"],
+        ["css=#license", "css:finder"],
+        ["xpath=//div[@id='license']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "825cf7e8-3936-4f1f-8e0b-e1a01d9b1f6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item5 a:nth-child(2) > img",
+      "targets": [
+        ["css=.item5 a:nth-child(2) > img", "css:finder"],
+        ["xpath=(//img[@alt='Stack Overflow'])[2]", "xpath:img"],
+        ["xpath=(//div[@id='networkinglinks']/a[2]/img)[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/a[2]/img", "xpath:position"]
+      ],
+      "value": "https://stackoverflow.com/users/10241858/ericstenberg"
+    }]
+  }, {
+    "id": "1d854a5c-f6a9-4040-ad3f-5c29e527f875",
+    "name": "TestFooterNetworkingLinksTwitter",
+    "commands": [{
+      "id": "03b527c7-6ef3-4e44-b0b2-33f19b4f12c3",
+      "comment": "",
+      "command": "open",
+      "target": "https://ericstenberg.github.io/encodingdecoding/index.html",
+      "targets": [],
+      "value": "https://ericstenberg.github.io/encodingdecoding/index.html"
+    }, {
+      "id": "64ca3a5c-8081-4be7-a71c-f8a1a1cbaabc",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=license",
+      "targets": [
+        ["id=license", "id"],
+        ["css=#license", "css:finder"],
+        ["xpath=//div[@id='license']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "c8837d37-fc8f-4d66-ba28-83e9537d75d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item5 a:nth-child(3) > img",
+      "targets": [
+        ["css=.item5 a:nth-child(3) > img", "css:finder"],
+        ["xpath=(//img[@alt='Twitter'])[2]", "xpath:img"],
+        ["xpath=(//div[@id='networkinglinks']/a[3]/img)[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/a[3]/img", "xpath:position"]
+      ],
+      "value": "https://twitter.com/ericstenberg0"
+    }]
+  }, {
+    "id": "44448595-ae43-40d8-a26c-9a9ded6d6bdf",
+    "name": "TestFooterNetworkingLinksLinkedIn",
+    "commands": [{
+      "id": "9fe769e8-e490-48e2-8ba3-5a7f1e8a6761",
+      "comment": "",
+      "command": "open",
+      "target": "https://ericstenberg.github.io/encodingdecoding/index.html",
+      "targets": [],
+      "value": "https://ericstenberg.github.io/encodingdecoding/index.html"
+    }, {
+      "id": "63e8d854-f0e9-4402-b13d-1a0972bd3e12",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=license",
+      "targets": [
+        ["id=license", "id"],
+        ["css=#license", "css:finder"],
+        ["xpath=//div[@id='license']", "xpath:attributes"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "c984ac39-3ff1-4dd0-95d2-5acc3000b912",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item5 a:nth-child(4)",
+      "targets": [
+        ["css=.item5 a:nth-child(4)", "css:finder"],
+        ["xpath=(//div[@id='networkinglinks']/a[4])[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.linkedin.com/in/ericdstenberg')])[2]", "xpath:href"],
+        ["xpath=//div[5]/div/a[4]", "xpath:position"]
+      ],
+      "value": "https://www.linkedin.com/authwall?trk=ripf&trkInfo=AQHwfoPejyLLNwAAAXXH6Qa4Lf8TrYA1endY3soF6F5OOHaC9-tN6H_V_1-MPoyYmjMFsPy-ACdFC_we_dtCgDiVDj9SO2rFRN7sOVgf_SGrr6DciDV9KTNQijHgdC-ZwTUNKok=&originalReferer=https://ericstenberg.github.io/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fericdstenberg"
+    }]
   }],
   "suites": [{
     "id": "04b5f312-7279-4753-b38e-a11472b77359",
